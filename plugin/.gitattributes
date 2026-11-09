@@ -1,0 +1,11 @@
+# Waypoint for dsh: keep text files LF in every checkout, so byte-for-byte checks (rendered icons,
+# exported trees, built bundle) match on Windows with core.autocrlf as well as on macOS and Linux.
+*.svg  text eol=lf
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.py   text eol=lf
+*.png  binary
+*.ico  binary

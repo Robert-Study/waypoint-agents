@@ -1,0 +1,7497 @@
+{
+ "_about": "Neutral demo answers for plugin/tools/preview.mjs, written by record.py. Regenerate; do not hand-edit.",
+ "responses": {
+  "/health": {
+   "ok": true,
+   "service": "cc-engine",
+   "version": "0.1.0",
+   "revision": 23
+  },
+  "/api/health": {
+   "ok": true,
+   "service": "cc-engine",
+   "version": "0.1.0",
+   "revision": 23
+  },
+  "/api/toggles": {
+   "toggles": [
+    {
+     "id": "claude_code",
+     "label": "Claude Code",
+     "kind": "agent",
+     "enabled": true,
+     "default": true,
+     "aliases": [
+      "agent:claude_code",
+      "route:claude_code",
+      "runner:claude",
+      "claude",
+      "claude_max"
+     ],
+     "route": "claude_code",
+     "updated_at": null,
+     "updated_by": null
+    },
+    {
+     "id": "freebuff",
+     "label": "Local model",
+     "kind": "agent",
+     "enabled": true,
+     "default": true,
+     "aliases": [
+      "agent:freebuff",
+      "route:freebuff",
+      "runner:freebuff",
+      "deepseek"
+     ],
+     "route": "freebuff",
+     "updated_at": null,
+     "updated_by": null
+    },
+    {
+     "id": "gemini_app",
+     "label": "Gemini App",
+     "kind": "route",
+     "enabled": true,
+     "default": true,
+     "aliases": [
+      "manual:gemini_app",
+      "route:gemini_app"
+     ],
+     "route": "gemini_app",
+     "updated_at": null,
+     "updated_by": null
+    },
+    {
+     "id": "gemini_studio",
+     "label": "Google AI Studio (Gemini API)",
+     "kind": "route",
+     "enabled": true,
+     "default": true,
+     "aliases": [
+      "gemini",
+      "route:gemini",
+      "runner:gemini",
+      "route:gemini_studio"
+     ],
+     "route": "gemini_studio",
+     "updated_at": null,
+     "updated_by": null
+    },
+    {
+     "id": "antigravity_manual",
+     "label": "Gemini CLI",
+     "kind": "agent",
+     "enabled": true,
+     "default": true,
+     "aliases": [
+      "antigravity",
+      "agent:antigravity",
+      "route:antigravity",
+      "runner:antigravity",
+      "route:antigravity_manual",
+      "agy",
+      "agy_cli",
+      "route:agy_cli",
+      "runner:agy_cli"
+     ],
+     "route": "antigravity_manual",
+     "updated_at": null,
+     "updated_by": null
+    },
+    {
+     "id": "codex",
+     "label": "Codex",
+     "kind": "agent",
+     "enabled": true,
+     "default": false,
+     "aliases": [
+      "agent:codex",
+      "route:codex",
+      "runner:codex",
+      "codex_cli",
+      "delegate_codex_metered_subagent"
+     ],
+     "route": "codex",
+     "updated_at": "2026-11-05T21:50:53+00:00",
+     "updated_by": "owner"
+    },
+    {
+     "id": "deepseek_dsh",
+     "label": "Built-in agent (dsh)",
+     "kind": "route",
+     "enabled": true,
+     "default": true,
+     "aliases": [
+      "agent:deepseek_dsh",
+      "route:deepseek_dsh",
+      "runner:dsh",
+      "dsh",
+      "runner:deepseek_dsh"
+     ],
+     "route": "deepseek_dsh",
+     "updated_at": null,
+     "updated_by": null
+    },
+    {
+     "id": "manual",
+     "label": "Manual",
+     "kind": "route",
+     "enabled": true,
+     "default": true,
+     "aliases": [
+      "manual:manual",
+      "route:manual"
+     ],
+     "route": "manual",
+     "updated_at": null,
+     "updated_by": null
+    }
+   ],
+   "enabled": {
+    "claude_code": true,
+    "freebuff": true,
+    "gemini_app": true,
+    "gemini_studio": true,
+    "antigravity_manual": true,
+    "codex": true,
+    "deepseek_dsh": true,
+    "manual": true,
+    "agent:claude_code": true,
+    "route:claude_code": true,
+    "runner:claude": true,
+    "claude": true,
+    "claude_max": true,
+    "agent:codex": true,
+    "route:codex": true,
+    "runner:codex": true,
+    "codex_cli": true,
+    "delegate_codex_metered_subagent": true,
+    "chatgpt": true,
+    "chatgpt_web": true,
+    "agent:freebuff": true,
+    "route:freebuff": true,
+    "runner:freebuff": true,
+    "deepseek": true,
+    "antigravity": true,
+    "agent:antigravity": true,
+    "route:antigravity": true,
+    "runner:antigravity": true,
+    "route:antigravity_manual": true,
+    "agy": true,
+    "agy_cli": true,
+    "route:agy_cli": true,
+    "runner:agy_cli": true,
+    "gemini": true,
+    "route:gemini": true,
+    "runner:gemini": true,
+    "route:gemini_studio": true,
+    "github_copilot": true,
+    "gh_copilot": true,
+    "agent:deepseek_dsh": true,
+    "route:deepseek_dsh": true,
+    "runner:dsh": true,
+    "dsh": true,
+    "runner:deepseek_dsh": true,
+    "manual:gemini_app": true,
+    "route:gemini_app": true,
+    "manual:manual": true,
+    "route:manual": true
+   },
+   "aliases": {
+    "agent:claude_code": "claude_code",
+    "route:claude_code": "claude_code",
+    "runner:claude": "claude_code",
+    "claude": "claude_code",
+    "claude_max": "claude_code",
+    "agent:codex": "codex",
+    "route:codex": "codex",
+    "runner:codex": "codex",
+    "codex_cli": "codex",
+    "delegate_codex_metered_subagent": "codex",
+    "chatgpt": "chatmode",
+    "chatgpt_web": "chatmode",
+    "agent:freebuff": "freebuff",
+    "route:freebuff": "freebuff",
+    "runner:freebuff": "freebuff",
+    "deepseek": "freebuff",
+    "antigravity": "antigravity_manual",
+    "agent:antigravity": "antigravity_manual",
+    "route:antigravity": "antigravity_manual",
+    "runner:antigravity": "antigravity_manual",
+    "route:antigravity_manual": "antigravity_manual",
+    "agy": "antigravity_manual",
+    "agy_cli": "antigravity_manual",
+    "route:agy_cli": "antigravity_manual",
+    "runner:agy_cli": "antigravity_manual",
+    "gemini": "gemini_studio",
+    "route:gemini": "gemini_studio",
+    "runner:gemini": "gemini_studio",
+    "route:gemini_studio": "gemini_studio",
+    "github_copilot": "copilot",
+    "gh_copilot": "copilot",
+    "agent:deepseek_dsh": "deepseek_dsh",
+    "route:deepseek_dsh": "deepseek_dsh",
+    "runner:dsh": "deepseek_dsh",
+    "dsh": "deepseek_dsh",
+    "runner:deepseek_dsh": "deepseek_dsh",
+    "manual:gemini_app": "gemini_app",
+    "route:gemini_app": "gemini_app",
+    "manual:manual": "manual",
+    "route:manual": "manual"
+   },
+   "disabled": [],
+   "defaults_off": [
+    "codex"
+   ],
+   "cascade_kinds": [
+    "subagent",
+    "agent",
+    "manual"
+   ],
+   "addons": {
+    "gemini_key_rotator": true,
+    "free_runners": true,
+    "claude_codex_pages": true,
+    "brain_learn": true
+   }
+  },
+  "/api/todos": {
+   "todos": [
+    {
+     "id": "td-735fe0",
+     "text": "Summarise this week's docs feedback into five themes.",
+     "status": "done",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "updated_at": "2026-11-05T21:50:52+00:00",
+     "created_by": "owner",
+     "merged_into": null,
+     "section": "computer",
+     "position": null,
+     "link": null,
+     "first_clicked_at": null,
+     "archived_at": null,
+     "done_by": "owner",
+     "handoffs": [],
+     "done": true,
+     "node": null,
+     "deliverables": [],
+     "archive_due_at": null
+    },
+    {
+     "id": "td-e22ac5",
+     "text": "Draft release notes for the new search box.",
+     "status": "open",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "updated_at": "2026-11-05T21:50:52+00:00",
+     "created_by": "owner",
+     "merged_into": null,
+     "section": "computer",
+     "position": null,
+     "link": null,
+     "first_clicked_at": null,
+     "archived_at": null,
+     "done_by": null,
+     "handoffs": [],
+     "done": false,
+     "node": null,
+     "deliverables": [],
+     "archive_due_at": null
+    },
+    {
+     "id": "td-643b80",
+     "text": "Check which v1 pages still get traffic from old links.",
+     "status": "open",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "updated_at": "2026-11-05T21:50:52+00:00",
+     "created_by": "owner",
+     "merged_into": null,
+     "section": "computer",
+     "position": null,
+     "link": null,
+     "first_clicked_at": null,
+     "archived_at": null,
+     "done_by": null,
+     "handoffs": [],
+     "done": false,
+     "node": null,
+     "deliverables": [],
+     "archive_due_at": null
+    },
+    {
+     "id": "td-27d087",
+     "text": "Read the proposed docs navigation and approve it or ask for changes.",
+     "status": "done",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "updated_at": "2026-11-05T21:50:52+00:00",
+     "created_by": "owner",
+     "merged_into": null,
+     "section": "human",
+     "position": 1,
+     "link": null,
+     "first_clicked_at": null,
+     "archived_at": null,
+     "done_by": "owner",
+     "handoffs": [],
+     "done": true,
+     "node": null,
+     "deliverables": [],
+     "archive_due_at": null
+    },
+    {
+     "id": "td-1172c0",
+     "text": "Open the search results page on a phone and say whether the highlighted sentences read well.",
+     "status": "open",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "updated_at": "2026-11-05T21:50:52+00:00",
+     "created_by": "owner",
+     "merged_into": null,
+     "section": "human",
+     "position": 2,
+     "link": null,
+     "first_clicked_at": null,
+     "archived_at": null,
+     "done_by": null,
+     "handoffs": [],
+     "done": false,
+     "node": null,
+     "deliverables": [],
+     "archive_due_at": null
+    },
+    {
+     "id": "td-b39e69",
+     "text": "Book a 30-minute walkthrough of the v2 preview with the support team.",
+     "status": "open",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "updated_at": "2026-11-05T21:50:52+00:00",
+     "created_by": "owner",
+     "merged_into": null,
+     "section": "human",
+     "position": 3,
+     "link": null,
+     "first_clicked_at": null,
+     "archived_at": null,
+     "done_by": null,
+     "handoffs": [],
+     "done": false,
+     "node": null,
+     "deliverables": [],
+     "archive_due_at": null
+    },
+    {
+     "id": "td-a4e7aa",
+     "text": "Pick the launch date for Docs site v2 once the link check is clean.",
+     "status": "open",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "updated_at": "2026-11-05T21:50:52+00:00",
+     "created_by": "owner",
+     "merged_into": null,
+     "section": "human",
+     "position": 4,
+     "link": null,
+     "first_clicked_at": null,
+     "archived_at": null,
+     "done_by": null,
+     "handoffs": [],
+     "done": false,
+     "node": null,
+     "deliverables": [],
+     "archive_due_at": null
+    }
+   ],
+   "sections": {
+    "computer": [
+     {
+      "id": "td-735fe0",
+      "text": "Summarise this week's docs feedback into five themes.",
+      "status": "done",
+      "created_at": "2026-11-05T21:50:52+00:00",
+      "updated_at": "2026-11-05T21:50:52+00:00",
+      "created_by": "owner",
+      "merged_into": null,
+      "section": "computer",
+      "position": null,
+      "link": null,
+      "first_clicked_at": null,
+      "archived_at": null,
+      "done_by": "owner",
+      "handoffs": [],
+      "done": true,
+      "node": null,
+      "deliverables": [],
+      "archive_due_at": null
+     },
+     {
+      "id": "td-e22ac5",
+      "text": "Draft release notes for the new search box.",
+      "status": "open",
+      "created_at": "2026-11-05T21:50:52+00:00",
+      "updated_at": "2026-11-05T21:50:52+00:00",
+      "created_by": "owner",
+      "merged_into": null,
+      "section": "computer",
+      "position": null,
+      "link": null,
+      "first_clicked_at": null,
+      "archived_at": null,
+      "done_by": null,
+      "handoffs": [],
+      "done": false,
+      "node": null,
+      "deliverables": [],
+      "archive_due_at": null
+     },
+     {
+      "id": "td-643b80",
+      "text": "Check which v1 pages still get traffic from old links.",
+      "status": "open",
+      "created_at": "2026-11-05T21:50:52+00:00",
+      "updated_at": "2026-11-05T21:50:52+00:00",
+      "created_by": "owner",
+      "merged_into": null,
+      "section": "computer",
+      "position": null,
+      "link": null,
+      "first_clicked_at": null,
+      "archived_at": null,
+      "done_by": null,
+      "handoffs": [],
+      "done": false,
+      "node": null,
+      "deliverables": [],
+      "archive_due_at": null
+     }
+    ],
+    "human": [
+     {
+      "id": "td-27d087",
+      "text": "Read the proposed docs navigation and approve it or ask for changes.",
+      "status": "done",
+      "created_at": "2026-11-05T21:50:52+00:00",
+      "updated_at": "2026-11-05T21:50:52+00:00",
+      "created_by": "owner",
+      "merged_into": null,
+      "section": "human",
+      "position": 1,
+      "link": null,
+      "first_clicked_at": null,
+      "archived_at": null,
+      "done_by": "owner",
+      "handoffs": [],
+      "done": true,
+      "node": null,
+      "deliverables": [],
+      "archive_due_at": null
+     },
+     {
+      "id": "td-1172c0",
+      "text": "Open the search results page on a phone and say whether the highlighted sentences read well.",
+      "status": "open",
+      "created_at": "2026-11-05T21:50:52+00:00",
+      "updated_at": "2026-11-05T21:50:52+00:00",
+      "created_by": "owner",
+      "merged_into": null,
+      "section": "human",
+      "position": 2,
+      "link": null,
+      "first_clicked_at": null,
+      "archived_at": null,
+      "done_by": null,
+      "handoffs": [],
+      "done": false,
+      "node": null,
+      "deliverables": [],
+      "archive_due_at": null
+     },
+     {
+      "id": "td-b39e69",
+      "text": "Book a 30-minute walkthrough of the v2 preview with the support team.",
+      "status": "open",
+      "created_at": "2026-11-05T21:50:52+00:00",
+      "updated_at": "2026-11-05T21:50:52+00:00",
+      "created_by": "owner",
+      "merged_into": null,
+      "section": "human",
+      "position": 3,
+      "link": null,
+      "first_clicked_at": null,
+      "archived_at": null,
+      "done_by": null,
+      "handoffs": [],
+      "done": false,
+      "node": null,
+      "deliverables": [],
+      "archive_due_at": null
+     },
+     {
+      "id": "td-a4e7aa",
+      "text": "Pick the launch date for Docs site v2 once the link check is clean.",
+      "status": "open",
+      "created_at": "2026-11-05T21:50:52+00:00",
+      "updated_at": "2026-11-05T21:50:52+00:00",
+      "created_by": "owner",
+      "merged_into": null,
+      "section": "human",
+      "position": 4,
+      "link": null,
+      "first_clicked_at": null,
+      "archived_at": null,
+      "done_by": null,
+      "handoffs": [],
+      "done": false,
+      "node": null,
+      "deliverables": [],
+      "archive_due_at": null
+     }
+    ]
+   },
+   "counts": {
+    "open": 5,
+    "total": 7,
+    "human_open": 3,
+    "computer_open": 2,
+    "archived": 0
+   }
+  },
+  "/api/brief": {
+   "since": "2026-11-05T09:51:06+00:00",
+   "until": "2026-11-05T21:51:06+00:00",
+   "hours": 12,
+   "paragraph": "In the last 12 hours, 13 tasks finished and 1 failed (Link check). 2 things need you. Usage left: Claude 5 hours 62%, Claude week (all models) 41%, Codex 5 hours 70%, Codex week 55%.",
+   "done": 13,
+   "failed": 1,
+   "needs_you": 2,
+   "done_items": [
+    {
+     "project": "docs-site-v1",
+     "node": "A1",
+     "title": "Pick the static site generator"
+    },
+    {
+     "project": "docs-site-v1",
+     "node": "A2",
+     "title": "Write the getting-started guide"
+    },
+    {
+     "project": "docs-site-v1",
+     "node": "A3",
+     "title": "Generate the API reference"
+    },
+    {
+     "project": "docs-site-v1",
+     "node": "A4",
+     "title": "Deploy a preview"
+    },
+    {
+     "project": "docs-site-v1",
+     "node": "A5",
+     "title": "You review the preview"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N1",
+     "title": "Audit the current pages"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N2",
+     "title": "Draft the new navigation"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N3",
+     "title": "You approve the navigation"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N4",
+     "title": "Move pages to the new structure"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N5",
+     "title": "Set up the search index"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N6",
+     "title": "Build the search box"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N8",
+     "title": "Dark theme tokens"
+    },
+    {
+     "project": "onboarding-emails",
+     "node": "E1",
+     "title": "Outline the five emails"
+    }
+   ],
+   "failed_items": [
+    {
+     "project": "docs-site-v2",
+     "node": "N12",
+     "title": "Link check"
+    }
+   ],
+   "usage": [
+    {
+     "pool": "claude_5h",
+     "label": "Claude 5 hours",
+     "remaining_percent": 62.0,
+     "status": "FRESH"
+    },
+    {
+     "pool": "claude_week",
+     "label": "Claude week (all models)",
+     "remaining_percent": 41.0,
+     "status": "FRESH"
+    },
+    {
+     "pool": "codex_5h",
+     "label": "Codex 5 hours",
+     "remaining_percent": 70.0,
+     "status": "FRESH"
+    },
+    {
+     "pool": "codex_week",
+     "label": "Codex week",
+     "remaining_percent": 55.0,
+     "status": "FRESH"
+    }
+   ],
+   "triage": {
+    "merges": [],
+    "suggestions": [
+     {
+      "todo": "td-a4e7aa",
+      "text": "Pick the launch date for Docs site v2 once the link check is clean.",
+      "project": "docs-site-v2",
+      "title": "Docs site v2",
+      "words": [
+       "doc",
+       "sit",
+       "launch"
+      ]
+     }
+    ],
+    "open": 5
+   }
+  },
+  "/api/projects": {
+   "projects": [
+    {
+     "id": "docs-site-v2",
+     "title": "Docs site v2",
+     "brief": "Second version of the docs site: new information architecture, full-text search, a dark theme, versioned docs and a launch checklist. Everything ships behind the preview host until the launch gate passes.",
+     "goal_hash": "f27af52d7e5b087bca4cfc5f468f3d51a7f636197f27c26838b57534f25df6ea",
+     "cwd": "C:\\Users\\alex\\Projects\\docs-site",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "archived": 0,
+     "status": "active",
+     "family": "docs-site",
+     "version": 2,
+     "family_title": "Docs site",
+     "versions": 2
+    },
+    {
+     "id": "onboarding-emails",
+     "title": "Onboarding email series",
+     "brief": "A five-email welcome series for new trial users: one message per day, each with a single action, measured by trial-to-paid conversion.",
+     "goal_hash": "b43bc68869f2bd9175b17aa469fe3f8395379f21638afafb6d22ba45858261c4",
+     "cwd": "C:\\Users\\alex\\Projects\\onboarding-emails",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "archived": 0,
+     "status": "active",
+     "family": null,
+     "version": null,
+     "family_title": null,
+     "versions": 0
+    }
+   ]
+  },
+  "/api/questions?open=1": {
+   "questions": [
+    {
+     "id": "q-6d1232648b",
+     "project_id": "docs-site-v2",
+     "node_id": "N7",
+     "kind": "text",
+     "prompt": "The search results page is built. Open it on a phone and say whether the highlighted sentences read well.",
+     "scale": null,
+     "answer_json": null,
+     "answered_at": null,
+     "captured": 0,
+     "purpose": "confirm",
+     "options": [],
+     "proposal": null,
+     "allowed": [
+      "accept",
+      "reply",
+      "ignore"
+     ],
+     "answer": null
+    },
+    {
+     "id": "q-f6fbe5adbc",
+     "project_id": null,
+     "node_id": null,
+     "kind": "likert",
+     "prompt": "How much detail do you want in the daily summary?",
+     "scale": 9,
+     "answer_json": null,
+     "answered_at": null,
+     "captured": 0,
+     "purpose": "preference",
+     "options": [],
+     "proposal": null,
+     "allowed": [
+      "ignore",
+      "answer"
+     ],
+     "answer": null
+    }
+   ]
+  },
+  "/api/runs": {
+   "runs": [
+    {
+     "id": "run-20261105-0815-b7c2",
+     "project_id": "docs-site-v2",
+     "status": "running",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "started_at": "2026-11-05T08:15:40+00:00",
+     "ended_at": null,
+     "settings": {
+      "preset": "balanced",
+      "pools": [
+       "claude",
+       "codex",
+       "freebuff"
+      ],
+      "default_pool": "claude"
+     },
+     "sprints": []
+    },
+    {
+     "id": "run-20261028-0900-a1f3",
+     "project_id": "docs-site-v1",
+     "status": "done",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "started_at": "2026-10-28T09:00:12+00:00",
+     "ended_at": "2026-10-28T11:42:05+00:00",
+     "settings": {
+      "preset": "balanced",
+      "pools": [
+       "claude",
+       "codex",
+       "freebuff"
+      ],
+      "default_pool": "claude"
+     },
+     "sprints": []
+    }
+   ]
+  },
+  "/api/agents": {
+   "agents": [
+    {
+     "id": "claude_code",
+     "name": "Claude Code",
+     "glyph": "claude",
+     "route": "claude CLI",
+     "note": "Team subscription",
+     "available": true,
+     "availability_detail": "claude on PATH",
+     "needs_confirm": false,
+     "busy": false,
+     "floor_percent": 0.0,
+     "models": [
+      {
+       "id": "opus",
+       "model": "opus",
+       "label": "Claude Opus 5",
+       "elo": 1468,
+       "context_window": 200000
+      },
+      {
+       "id": "sonnet",
+       "model": "sonnet",
+       "label": "Claude Sonnet 5",
+       "elo": 1452,
+       "context_window": 200000
+      },
+      {
+       "id": "haiku",
+       "model": "haiku",
+       "label": "Claude Haiku 5",
+       "elo": 1371,
+       "context_window": 200000
+      }
+     ],
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+     ],
+     "usage_percent": 41.0,
+     "usage_status": "FRESH",
+     "usage_pool": "Claude week (all models)",
+     "usage": [
+      {
+       "pool": "claude_5h",
+       "label": "Claude 5 hours",
+       "remaining_percent": 62.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-06T00:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "claude_week",
+       "label": "Claude week (all models)",
+       "remaining_percent": 41.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-09T05:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ]
+    },
+    {
+     "id": "codex",
+     "name": "Codex",
+     "glyph": "codex",
+     "route": "codex CLI",
+     "note": "Team subscription; confirm usage before each send",
+     "available": true,
+     "availability_detail": "codex on PATH",
+     "needs_confirm": true,
+     "busy": false,
+     "floor_percent": 0.0,
+     "models": [
+      {
+       "id": "gpt-5.5-codex",
+       "model": "gpt-5.5-codex",
+       "label": "GPT-5.5 Codex",
+       "elo": 1460,
+       "context_window": 400000
+      },
+      {
+       "id": "gpt-5.5-mini",
+       "model": "gpt-5.5-mini",
+       "label": "GPT-5.5 mini",
+       "elo": 1389,
+       "context_window": 400000
+      }
+     ],
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+     ],
+     "usage_percent": 55.0,
+     "usage_status": "FRESH",
+     "usage_pool": "Codex week",
+     "usage": [
+      {
+       "pool": "codex_5h",
+       "label": "Codex 5 hours",
+       "remaining_percent": 70.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-05T23:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "codex_week",
+       "label": "Codex week",
+       "remaining_percent": 55.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-10T01:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ]
+    },
+    {
+     "id": "freebuff",
+     "name": "Local model",
+     "glyph": "deepseek",
+     "route": "local server",
+     "note": "Runs on this computer; free; text only",
+     "available": true,
+     "availability_detail": "listening on port 11434",
+     "needs_confirm": false,
+     "busy": false,
+     "floor_percent": 0.0,
+     "models": [
+      {
+       "id": "qwen3-8b",
+       "model": "qwen3-8b",
+       "label": "Qwen3 8B",
+       "elo": 1214,
+       "context_window": 32768
+      },
+      {
+       "id": "llama-4-scout",
+       "model": "llama-4-scout",
+       "label": "Llama 4 Scout",
+       "elo": 1236,
+       "context_window": 131072
+      }
+     ],
+     "efforts": [],
+     "usage_percent": null,
+     "usage_status": "UNKNOWN",
+     "usage_pool": null,
+     "usage": []
+    },
+    {
+     "id": "antigravity",
+     "name": "Gemini CLI",
+     "glyph": "gemini",
+     "route": "gemini CLI",
+     "note": "Gemini CLI subscription",
+     "available": true,
+     "availability_detail": "gemini on PATH",
+     "needs_confirm": false,
+     "busy": false,
+     "floor_percent": 0.0,
+     "models": [
+      {
+       "id": "gemini-3-pro",
+       "model": "gemini-3-pro",
+       "label": "Gemini 3 Pro",
+       "elo": 1447,
+       "context_window": 1048576
+      },
+      {
+       "id": "gemini-3-flash",
+       "model": "gemini-3-flash",
+       "label": "Gemini 3 Flash",
+       "elo": 1402,
+       "context_window": 1048576
+      }
+     ],
+     "efforts": [],
+     "usage_percent": 37.0,
+     "usage_status": "FRESH",
+     "usage_pool": "Gemini CLI partner models week",
+     "usage": [
+      {
+       "pool": "antigravity_week",
+       "label": "Gemini CLI week",
+       "remaining_percent": 48.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-10T21:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "antigravity_gemini_5h",
+       "label": "Gemini CLI 5 hours",
+       "remaining_percent": 66.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-06T01:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "antigravity_claude_week",
+       "label": "Gemini CLI partner models week",
+       "remaining_percent": 37.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-10T21:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "antigravity_claude_5h",
+       "label": "Gemini CLI partner models 5 hours",
+       "remaining_percent": 58.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-06T01:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "antigravity_argon_week",
+       "label": "Gemini CLI Pro week",
+       "remaining_percent": 44.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-10T21:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ]
+    }
+   ],
+   "connections": [
+    {
+     "id": "claude_code",
+     "name": "Claude Code",
+     "agent_id": "claude_code",
+     "state": "ready",
+     "line": "Ready",
+     "ok": true,
+     "enabled": true,
+     "dispatchable": true
+    },
+    {
+     "id": "codex",
+     "name": "Codex",
+     "agent_id": "codex",
+     "state": "ready",
+     "line": "Ready",
+     "ok": true,
+     "enabled": true,
+     "dispatchable": true
+    },
+    {
+     "id": "antigravity_manual",
+     "name": "Gemini CLI",
+     "agent_id": "antigravity",
+     "state": "ready",
+     "line": "Ready",
+     "ok": true,
+     "enabled": true,
+     "dispatchable": true
+    },
+    {
+     "id": "freebuff",
+     "name": "Local model",
+     "agent_id": "freebuff",
+     "state": "ready",
+     "line": "Ready",
+     "ok": true,
+     "enabled": true,
+     "dispatchable": true
+    },
+    {
+     "id": "gemini_studio",
+     "name": "Gemini API (AI Studio)",
+     "agent_id": null,
+     "state": "ready",
+     "line": "Ready: 2 keys",
+     "ok": true,
+     "enabled": true,
+     "dispatchable": true
+    },
+    {
+     "id": "gemini_app",
+     "name": "Gemini App",
+     "agent_id": null,
+     "state": "ready",
+     "line": "Manual: Copy Prompt",
+     "ok": true,
+     "enabled": true,
+     "dispatchable": true
+    },
+    {
+     "id": "deepseek_dsh",
+     "name": "Built-in agent (dsh)",
+     "agent_id": null,
+     "state": "ready",
+     "line": "Ready",
+     "ok": true,
+     "enabled": true,
+     "dispatchable": true
+    }
+   ],
+   "folders": [
+    {
+     "id": "drive",
+     "label": "Notes",
+     "path": "C:\\Users\\alex\\Notes"
+    },
+    {
+     "id": "docs-site",
+     "label": "docs-site",
+     "path": "C:\\Users\\alex\\Projects\\docs-site"
+    }
+   ],
+   "default_folder": "drive"
+  },
+  "/api/models": {
+   "models": [
+    {
+     "id": "agent:claude_code",
+     "label": "Claude Code",
+     "provider": "anthropic",
+     "provider_label": null,
+     "kind": "agent",
+     "model": null,
+     "route": "claude_code",
+     "runner": "claude",
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": {
+      "remaining_percent": 41.0,
+      "resets_at": "2026-11-09T05:50:52+00:00",
+      "status": "FRESH",
+      "pool": "claude_week",
+      "label": "Claude week (all models)"
+     },
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Claude Team subscription through the claude CLI.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['claude_code'] (Waypoint dispatch route)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null
+    },
+    {
+     "id": "agent:freebuff",
+     "label": "Local model",
+     "provider": "ollama",
+     "provider_label": null,
+     "kind": "agent",
+     "model": null,
+     "route": "freebuff",
+     "runner": "freebuff",
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "A local model served on this computer; free, text only.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['freebuff'] (Waypoint dispatch route)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null
+    },
+    {
+     "id": "agent:antigravity",
+     "label": "Gemini CLI",
+     "provider": "google",
+     "provider_label": null,
+     "kind": "agent",
+     "model": null,
+     "route": "antigravity",
+     "runner": "antigravity",
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": {
+      "remaining_percent": 37.0,
+      "resets_at": "2026-11-10T21:50:52+00:00",
+      "status": "FRESH",
+      "pool": "antigravity_claude_week",
+      "label": "Gemini CLI partner models week"
+     },
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Gemini CLI, an agentic coder. Not the Gemini API key pool.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['antigravity'] (Waypoint dispatch route)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null
+    },
+    {
+     "id": "agent:codex",
+     "label": "Codex",
+     "provider": "openai-codex",
+     "provider_label": null,
+     "kind": "agent",
+     "model": null,
+     "route": null,
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": {
+      "remaining_percent": 55.0,
+      "resets_at": "2026-11-10T01:50:52+00:00",
+      "status": "FRESH",
+      "pool": "codex_week",
+      "label": "Codex week"
+     },
+     "run_natively": true,
+     "run_natively_reason": "Use Codex yourself in its own app or the Agents tab.",
+     "note": "Codex CLI: a subagent and dispatch route when its switch is on (off by default).",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "agents.py Codex agent (Alex's own use; providers.build refuses Codex)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null
+    },
+    {
+     "id": "manual:gemini_app",
+     "label": "Gemini app",
+     "provider": "google",
+     "provider_label": null,
+     "kind": "manual",
+     "model": null,
+     "route": "gemini_app",
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": {
+      "remaining_percent": null,
+      "resets_at": null,
+      "status": "UNKNOWN",
+      "pool": "gemini_app",
+      "label": "Gemini app"
+     },
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Copy Prompt hand-off to the Gemini app; never automated.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['gemini_app'] (Copy Prompt hand-off)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null
+    },
+    {
+     "id": "manual:manual",
+     "label": "Manual",
+     "provider": "manual",
+     "provider_label": null,
+     "kind": "manual",
+     "model": null,
+     "route": "manual",
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Copy Prompt hand-off for Alex to run anywhere.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['manual'] (Copy Prompt hand-off)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null
+    },
+    {
+     "id": "chat:anthropic/claude-sonnet-5",
+     "label": "Claude Sonnet 5",
+     "provider": "anthropic",
+     "provider_label": null,
+     "kind": "chat",
+     "model": "claude-sonnet-5",
+     "route": null,
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": 1452,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "1452",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": 200000,
+     "speed": "medium",
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Balanced model for everyday chat and review.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "demo lineup",
+     "sources": {},
+     "dsh": null,
+     "canonical": "claude-sonnet-5",
+     "badge": null,
+     "in_picker": true,
+     "health": null
+    },
+    {
+     "id": "chat:google/gemini-3-pro",
+     "label": "Gemini 3 Pro",
+     "provider": "google",
+     "provider_label": null,
+     "kind": "chat",
+     "model": "gemini-3-pro",
+     "route": null,
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": 1447,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "1447",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": 1048576,
+     "speed": "medium",
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Long context; good for reading many files at once.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "demo lineup",
+     "sources": {},
+     "dsh": null,
+     "canonical": "gemini-3-pro",
+     "badge": null,
+     "in_picker": true,
+     "health": null
+    },
+    {
+     "id": "chat:deepseek/deepseek-v4-flash",
+     "label": "DeepSeek V4 Flash",
+     "provider": "deepseek",
+     "provider_label": null,
+     "kind": "chat",
+     "model": "deepseek-v4-flash",
+     "route": null,
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": 1391,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "1391",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": 131072,
+     "speed": "fast",
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Fast and cheap for drafts and summaries.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "demo lineup",
+     "sources": {},
+     "dsh": null,
+     "canonical": "deepseek-v4-flash",
+     "badge": null,
+     "in_picker": true,
+     "health": null
+    },
+    {
+     "id": "chat:ollama/qwen3-8b",
+     "label": "Qwen3 8B (local)",
+     "provider": "ollama",
+     "provider_label": null,
+     "kind": "chat",
+     "model": "qwen3-8b",
+     "route": null,
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": 1214,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "1214",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": 32768,
+     "speed": "fast",
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Runs on this computer; free.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "demo lineup",
+     "sources": {},
+     "dsh": null,
+     "canonical": "qwen3-8b",
+     "badge": null,
+     "in_picker": true,
+     "health": null
+    },
+    {
+     "id": "subagent:gemini/gemini-3-flash",
+     "label": "Gemini 3 Flash",
+     "provider": "google",
+     "provider_label": null,
+     "kind": "subagent",
+     "model": "gemini-3-flash",
+     "route": null,
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": 1402,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "1402",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": 1048576,
+     "speed": "fast",
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Gemini API key pool; free tier.",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "demo lineup",
+     "sources": {},
+     "dsh": null,
+     "canonical": "gemini-3-flash",
+     "badge": null,
+     "in_picker": false,
+     "health": null
+    }
+   ],
+   "kinds": [
+    "chat",
+    "subagent",
+    "agent",
+    "manual"
+   ],
+   "efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "state_file": "models_disabled.json"
+  },
+  "/api/models/gemini_keys": {
+   "provider": "Google AI Studio (Gemini API)",
+   "separate_from": "Gemini CLI is a different product with its own sign-in and usage; this pool is only the Google AI Studio Gemini API keys.",
+   "slots": [
+    {
+     "slot": "Primary",
+     "label": "Primary",
+     "env": "GEMINI_API_KEY",
+     "present": true,
+     "active": true,
+     "same_as": null,
+     "from": ".env"
+    },
+    {
+     "slot": "Backup",
+     "label": "Backup",
+     "env": "GEMINI_API_KEY_2",
+     "present": true,
+     "active": false,
+     "same_as": null,
+     "from": ".env"
+    }
+   ],
+   "active": "Primary",
+   "active_state": "ok",
+   "dsh_target": "~/.dsh/.credentials.yaml refs.GEMINI_API_KEY (dsh's Google AI Studio provider)",
+   "subagent_rotation": [
+    "Primary",
+    "Backup"
+   ],
+   "rotation_note": "The Gemini subagent starts at the first slot and moves to the next on a 429.",
+   "restart_hint": "dsh reads its credentials when it starts: restart dsh for a switch to reach the chat picker.",
+   "source": ".env + environment (names only)"
+  },
+  "/api/sync/status": {
+   "mode": "Local",
+   "repos": [
+    {
+     "name": "docs-site",
+     "path": "C:\\Users\\alex\\Projects\\docs-site",
+     "branch": "main",
+     "upstream": "origin/main",
+     "ahead": 0,
+     "behind": 0,
+     "dirty": false,
+     "cloud_ahead": false,
+     "state": "up_to_date",
+     "detail": null
+    },
+    {
+     "name": "onboarding-emails",
+     "path": "C:\\Users\\alex\\Projects\\onboarding-emails",
+     "branch": "main",
+     "upstream": "origin/main",
+     "ahead": 1,
+     "behind": 0,
+     "dirty": false,
+     "cloud_ahead": false,
+     "state": "ahead",
+     "detail": null
+    }
+   ],
+   "needs_merge": false,
+   "last": null,
+   "checked_at": "2026-11-05T21:51:07+00:00"
+  },
+  "/api/autonomous": {
+   "settings": {
+    "preset": "balanced",
+    "models": [],
+    "efforts": {
+     "claude": "medium",
+     "codex": "medium"
+    },
+    "punch_clock": true,
+    "max_use": {},
+    "auto_wake": true,
+    "power_off": false,
+    "merge_resets": true,
+    "sequence": []
+   },
+   "models": [
+    {
+     "id": "agent:claude_code",
+     "label": "Claude Code",
+     "provider": "anthropic",
+     "provider_label": null,
+     "kind": "agent",
+     "model": null,
+     "route": "claude_code",
+     "runner": "claude",
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": {
+      "remaining_percent": 41.0,
+      "resets_at": "2026-11-09T05:50:52+00:00",
+      "status": "FRESH",
+      "pool": "claude_week",
+      "label": "Claude week (all models)"
+     },
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Claude Code",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['claude_code'] (Waypoint dispatch route)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null,
+     "runnable": true
+    },
+    {
+     "id": "agent:freebuff",
+     "label": "Local model",
+     "provider": "ollama",
+     "provider_label": null,
+     "kind": "agent",
+     "model": null,
+     "route": "freebuff",
+     "runner": "freebuff",
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "Local model",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['freebuff'] (Waypoint dispatch route)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null,
+     "runnable": true
+    },
+    {
+     "id": "agent:antigravity",
+     "label": "Gemini CLI",
+     "provider": "google",
+     "provider_label": null,
+     "kind": "manual",
+     "model": null,
+     "route": "antigravity_manual",
+     "runner": "antigravity",
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": {
+      "remaining_percent": 37.0,
+      "resets_at": "2026-11-10T21:50:52+00:00",
+      "status": "FRESH",
+      "pool": "antigravity_claude_week",
+      "label": "Gemini CLI partner models week"
+     },
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "manual: Copy Prompt",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['antigravity'] (Waypoint dispatch route)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null,
+     "registry_route": "antigravity",
+     "runnable": true
+    },
+    {
+     "id": "agent:codex",
+     "label": "Codex",
+     "provider": "openai-codex",
+     "provider_label": null,
+     "kind": "agent",
+     "model": null,
+     "route": "codex",
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": {
+      "remaining_percent": 55.0,
+      "resets_at": "2026-11-10T01:50:52+00:00",
+      "status": "FRESH",
+      "pool": "codex_week",
+      "label": "Codex week"
+     },
+     "run_natively": true,
+     "run_natively_reason": "Use Codex yourself in its own app or the Agents tab.",
+     "note": "Codex",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "agents.py Codex agent (Alex's own use; providers.build refuses Codex)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null,
+     "runnable": true
+    },
+    {
+     "id": "manual:gemini_app",
+     "label": "Gemini app",
+     "provider": "google",
+     "provider_label": null,
+     "kind": "manual",
+     "model": null,
+     "route": "gemini_app",
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": {
+      "remaining_percent": null,
+      "resets_at": null,
+      "status": "UNKNOWN",
+      "pool": "gemini_app",
+      "label": "Gemini app"
+     },
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "manual: Copy Prompt",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['gemini_app'] (Copy Prompt hand-off)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null,
+     "runnable": true
+    },
+    {
+     "id": "manual:manual",
+     "label": "Manual",
+     "provider": "manual",
+     "provider_label": null,
+     "kind": "manual",
+     "model": null,
+     "route": "manual",
+     "runner": null,
+     "roles": [],
+     "pool": null,
+     "enabled": true,
+     "access": null,
+     "elo": null,
+     "elo_by_effort": {
+      "low": "n/a",
+      "medium": "n/a",
+      "high": "n/a",
+      "xhigh": "n/a",
+      "max": "n/a"
+     },
+     "effort": null,
+     "context_window": null,
+     "speed": null,
+     "usage": null,
+     "run_natively": false,
+     "run_natively_reason": null,
+     "note": "chat only",
+     "strongest": true,
+     "strongest_rule": null,
+     "pool_size": 1,
+     "source": "providers.ADAPTERS['manual'] (Copy Prompt hand-off)",
+     "sources": {},
+     "dsh": null,
+     "canonical": null,
+     "badge": null,
+     "in_picker": false,
+     "health": null,
+     "runnable": false
+    }
+   ],
+   "models_source": "registry",
+   "usage": [
+    {
+     "pool": "claude_5h",
+     "label": "Claude 5 hours",
+     "remaining_percent": 62.0,
+     "resets_at": "2026-11-06T00:50:52+00:00",
+     "status": "FRESH",
+     "observed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "claude_week",
+     "label": "Claude week (all models)",
+     "remaining_percent": 41.0,
+     "resets_at": "2026-11-09T05:50:52+00:00",
+     "status": "FRESH",
+     "observed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "codex_5h",
+     "label": "Codex 5 hours",
+     "remaining_percent": 70.0,
+     "resets_at": "2026-11-05T23:50:52+00:00",
+     "status": "FRESH",
+     "observed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "codex_week",
+     "label": "Codex week",
+     "remaining_percent": 55.0,
+     "resets_at": "2026-11-10T01:50:52+00:00",
+     "status": "FRESH",
+     "observed_at": "2026-11-05T21:50:52+00:00"
+    }
+   ],
+   "runs": [],
+   "running": false,
+   "kinds": [
+    "claude",
+    "codex",
+    "dual",
+    "auto_dual"
+   ]
+  },
+  "/api/sprints/timeline?hours=12": {
+   "now": "2026-11-05T21:51:07Z",
+   "from": "2026-11-05T21:51:07Z",
+   "to": "2026-11-06T09:51:07Z",
+   "lookback_from": "2026-11-04T21:51:07Z",
+   "hours": 12,
+   "pools": [
+    {
+     "id": "claude_code",
+     "label": "Claude Code",
+     "kind": "dispatch",
+     "gate": "usage",
+     "usage": [
+      {
+       "pool": "claude_5h",
+       "label": "Claude 5 hours",
+       "remaining_percent": 62.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-06T00:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "claude_week",
+       "label": "Claude week (all models)",
+       "remaining_percent": 41.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-09T05:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ],
+     "resets": [
+      {
+       "at": "2026-11-06T00:50:52Z",
+       "usage_pool": "claude_5h",
+       "label": "Claude 5 hours",
+       "status": "FRESH"
+      }
+     ],
+     "default_start": "2026-11-06T00:51:52Z",
+     "default_aligned": true
+    },
+    {
+     "id": "freebuff",
+     "label": "Local model",
+     "kind": "dispatch",
+     "gate": "free",
+     "usage": [],
+     "resets": [],
+     "default_start": "2026-11-05T21:51:07Z",
+     "default_aligned": false
+    },
+    {
+     "id": "codex",
+     "label": "Codex",
+     "kind": "manual",
+     "gate": "usage",
+     "usage": [
+      {
+       "pool": "codex_5h",
+       "label": "Codex 5 hours",
+       "remaining_percent": 70.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-05T23:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "codex_week",
+       "label": "Codex week",
+       "remaining_percent": 55.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-10T01:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ],
+     "resets": [
+      {
+       "at": "2026-11-05T23:50:52Z",
+       "usage_pool": "codex_5h",
+       "label": "Codex 5 hours",
+       "status": "FRESH"
+      }
+     ],
+     "default_start": null,
+     "default_aligned": false
+    }
+   ],
+   "sprints": [],
+   "runs": [
+    {
+     "id": "run-20261105-0815-b7c2",
+     "project_id": "docs-site-v2",
+     "status": "running",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "started_at": "2026-11-05T08:15:40+00:00",
+     "ended_at": null,
+     "pools": [
+      "claude",
+      "codex",
+      "freebuff"
+     ],
+     "owned": false
+    }
+   ],
+   "next_up": [],
+   "recently_finished": [],
+   "next_wake_at": null
+  },
+  "/api/sprints/timeline?hours=24": {
+   "now": "2026-11-05T21:51:07Z",
+   "from": "2026-11-05T21:51:07Z",
+   "to": "2026-11-06T21:51:07Z",
+   "lookback_from": "2026-11-04T21:51:07Z",
+   "hours": 24,
+   "pools": [
+    {
+     "id": "claude_code",
+     "label": "Claude Code",
+     "kind": "dispatch",
+     "gate": "usage",
+     "usage": [
+      {
+       "pool": "claude_5h",
+       "label": "Claude 5 hours",
+       "remaining_percent": 62.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-06T00:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "claude_week",
+       "label": "Claude week (all models)",
+       "remaining_percent": 41.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-09T05:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ],
+     "resets": [
+      {
+       "at": "2026-11-06T00:50:52Z",
+       "usage_pool": "claude_5h",
+       "label": "Claude 5 hours",
+       "status": "FRESH"
+      }
+     ],
+     "default_start": "2026-11-06T00:51:52Z",
+     "default_aligned": true
+    },
+    {
+     "id": "freebuff",
+     "label": "Local model",
+     "kind": "dispatch",
+     "gate": "free",
+     "usage": [],
+     "resets": [],
+     "default_start": "2026-11-05T21:51:07Z",
+     "default_aligned": false
+    },
+    {
+     "id": "codex",
+     "label": "Codex",
+     "kind": "manual",
+     "gate": "usage",
+     "usage": [
+      {
+       "pool": "codex_5h",
+       "label": "Codex 5 hours",
+       "remaining_percent": 70.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-05T23:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "codex_week",
+       "label": "Codex week",
+       "remaining_percent": 55.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-10T01:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ],
+     "resets": [
+      {
+       "at": "2026-11-05T23:50:52Z",
+       "usage_pool": "codex_5h",
+       "label": "Codex 5 hours",
+       "status": "FRESH"
+      }
+     ],
+     "default_start": null,
+     "default_aligned": false
+    }
+   ],
+   "sprints": [],
+   "runs": [
+    {
+     "id": "run-20261105-0815-b7c2",
+     "project_id": "docs-site-v2",
+     "status": "running",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "started_at": "2026-11-05T08:15:40+00:00",
+     "ended_at": null,
+     "pools": [
+      "claude",
+      "codex",
+      "freebuff"
+     ],
+     "owned": false
+    }
+   ],
+   "next_up": [],
+   "recently_finished": [],
+   "next_wake_at": null
+  },
+  "/api/sprints/timeline?hours=48": {
+   "now": "2026-11-05T21:51:07Z",
+   "from": "2026-11-05T21:51:07Z",
+   "to": "2026-11-07T21:51:07Z",
+   "lookback_from": "2026-11-04T21:51:07Z",
+   "hours": 48,
+   "pools": [
+    {
+     "id": "claude_code",
+     "label": "Claude Code",
+     "kind": "dispatch",
+     "gate": "usage",
+     "usage": [
+      {
+       "pool": "claude_5h",
+       "label": "Claude 5 hours",
+       "remaining_percent": 62.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-06T00:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "claude_week",
+       "label": "Claude week (all models)",
+       "remaining_percent": 41.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-09T05:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ],
+     "resets": [
+      {
+       "at": "2026-11-06T00:50:52Z",
+       "usage_pool": "claude_5h",
+       "label": "Claude 5 hours",
+       "status": "FRESH"
+      }
+     ],
+     "default_start": "2026-11-06T00:51:52Z",
+     "default_aligned": true
+    },
+    {
+     "id": "freebuff",
+     "label": "Local model",
+     "kind": "dispatch",
+     "gate": "free",
+     "usage": [],
+     "resets": [],
+     "default_start": "2026-11-05T21:51:07Z",
+     "default_aligned": false
+    },
+    {
+     "id": "codex",
+     "label": "Codex",
+     "kind": "manual",
+     "gate": "usage",
+     "usage": [
+      {
+       "pool": "codex_5h",
+       "label": "Codex 5 hours",
+       "remaining_percent": 70.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-05T23:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      },
+      {
+       "pool": "codex_week",
+       "label": "Codex week",
+       "remaining_percent": 55.0,
+       "status": "FRESH",
+       "resets_at": "2026-11-10T01:50:52+00:00",
+       "observed_at": "2026-11-05T21:50:52+00:00"
+      }
+     ],
+     "resets": [
+      {
+       "at": "2026-11-05T23:50:52Z",
+       "usage_pool": "codex_5h",
+       "label": "Codex 5 hours",
+       "status": "FRESH"
+      }
+     ],
+     "default_start": null,
+     "default_aligned": false
+    }
+   ],
+   "sprints": [],
+   "runs": [
+    {
+     "id": "run-20261105-0815-b7c2",
+     "project_id": "docs-site-v2",
+     "status": "running",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "started_at": "2026-11-05T08:15:40+00:00",
+     "ended_at": null,
+     "pools": [
+      "claude",
+      "codex",
+      "freebuff"
+     ],
+     "owned": false
+    }
+   ],
+   "next_up": [],
+   "recently_finished": [],
+   "next_wake_at": null
+  },
+  "/api/brain": {
+   "schema_version": 1,
+   "generated": true,
+   "built_at": "2026-11-05T21:51:09+00:00",
+   "roots": {
+    "drive": "C:\\Users\\alex\\Notes",
+    "disk": "C:\\Users\\alex\\Projects"
+   },
+   "counts": {
+    "preference": 9,
+    "brain": 6,
+    "skill": 3,
+    "instruction": 4,
+    "folder": 21
+   },
+   "link_counts": {
+    "link": 16,
+    "related": 8,
+    "supersedes": 1,
+    "contains": 41,
+    "cites": 1
+   },
+   "preference_clusters": {
+    "Communication": 2,
+    "Dashboard & workflow": 2,
+    "UI & design": 1,
+    "Orchestration": 2,
+    "Models & budget": 2
+   },
+   "unresolved_links": 0,
+   "provenance_order": [
+    "explicit_user_statement",
+    "user_reported_calibration",
+    "vetted_source",
+    "agent_synthesis",
+    "inherited_registry"
+   ],
+   "nodes": [
+    {
+     "id": "pref:001_plain_language",
+     "label": "Write in plain language",
+     "kind": "preference",
+     "cluster": "Communication",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\001_plain_language.md",
+     "provenance": "explicit_user_statement",
+     "weight": 1,
+     "brightness": 1.0,
+     "tags": [
+      "communication",
+      "simplicity",
+      "compact"
+     ],
+     "captured_at": "2026-09-14",
+     "summary": "Short sentences, everyday words, no jargon in anything Alex reads. Say what changed and what is next."
+    },
+    {
+     "id": "pref:002_small_changes",
+     "label": "Prefer small reviewable changes",
+     "kind": "preference",
+     "cluster": "Dashboard & workflow",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\002_small_changes.md",
+     "provenance": "explicit_user_statement",
+     "weight": 2,
+     "brightness": 1.0,
+     "tags": [
+      "review",
+      "workflow",
+      "git"
+     ],
+     "captured_at": "2026-09-20",
+     "summary": "One change per pull request, under about 300 lines, with a one-line summary at the top."
+    },
+    {
+     "id": "pref:003_one_primary_action",
+     "label": "One primary action per screen",
+     "kind": "preference",
+     "cluster": "UI & design",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\003_one_primary_action.md",
+     "provenance": "user_reported_calibration",
+     "weight": 1,
+     "brightness": 0.7,
+     "tags": [
+      "ui",
+      "design",
+      "controls"
+     ],
+     "captured_at": "2026-10-02",
+     "summary": "Each screen has one filled button; everything else is an outline or a link. Colour is kept for status."
+    },
+    {
+     "id": "pref:004_checks_first",
+     "label": "Write the done-check before the work",
+     "kind": "preference",
+     "cluster": "Orchestration",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\004_checks_first.md",
+     "provenance": "explicit_user_statement",
+     "weight": 1,
+     "brightness": 1.0,
+     "tags": [
+      "verification",
+      "planning",
+      "workers"
+     ],
+     "captured_at": "2026-10-05",
+     "summary": "Every task names how we will know it is done before anyone starts it: a command, a file, a sentence in a file, or a person saying yes."
+    },
+    {
+     "id": "pref:005_quiet_notifications",
+     "label": "Quiet notifications",
+     "kind": "preference",
+     "cluster": "Dashboard & workflow",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\005_quiet_notifications.md",
+     "provenance": "agent_synthesis",
+     "weight": 1,
+     "brightness": 0.5,
+     "tags": [
+      "notifications",
+      "dashboard"
+     ],
+     "captured_at": "2026-10-11",
+     "summary": "Notify only when something needs a decision. Finished work goes into the daily summary, not a pop-up."
+    },
+    {
+     "id": "pref:006_free_models_for_drafts",
+     "label": "Free models for first drafts",
+     "kind": "preference",
+     "cluster": "Models & budget",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\006_free_models_for_drafts.md",
+     "provenance": "vetted_source",
+     "weight": 1,
+     "brightness": 0.6,
+     "tags": [
+      "models",
+      "budget",
+      "routing"
+     ],
+     "captured_at": "2026-10-19",
+     "summary": "Use a free or local model for first drafts and summaries; keep the paid subscription for review and hard code changes."
+    },
+    {
+     "id": "pref:007_weekly_summary",
+     "label": "Weekly summary format",
+     "kind": "preference",
+     "cluster": "Communication",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\007_weekly_summary.md",
+     "provenance": "explicit_user_statement",
+     "weight": 1,
+     "brightness": 1.0,
+     "tags": [
+      "summaries",
+      "communication",
+      "compact"
+     ],
+     "captured_at": "2026-10-21",
+     "summary": "Every weekly summary opens with one sentence on what shipped, then a short list of what is blocked and who can unblock it, then the decisions that need an answer this week. Keep it under two hundred words, link each item to its task, and l…"
+    },
+    {
+     "id": "pref:008_docs_review_checklist",
+     "label": "Docs review checklist",
+     "kind": "preference",
+     "cluster": "Orchestration",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\008_docs_review_checklist.md",
+     "provenance": "user_reported_calibration",
+     "weight": 1,
+     "brightness": 0.7,
+     "tags": [
+      "review",
+      "verification"
+     ],
+     "captured_at": "2026-10-12",
+     "summary": "Before a docs page ships, run every command on the page in a clean folder, open every link and check it lands on the right heading, read each paragraph aloud and cut any sentence that does not help the reader finish the task, check that sc…"
+    },
+    {
+     "id": "pref:009_local_models_first",
+     "label": "Local models first for drafts",
+     "kind": "preference",
+     "cluster": "Models & budget",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\009_local_models_first.md",
+     "provenance": "explicit_user_statement",
+     "weight": 1,
+     "brightness": 1.0,
+     "tags": [
+      "models",
+      "budget",
+      "routing"
+     ],
+     "captured_at": "2026-11-02",
+     "summary": "Try the local model first for drafts and summaries, then a free hosted model, and keep the paid subscriptions for review and hard code changes."
+    },
+    {
+     "id": "brain:reversible_decisions",
+     "label": "Reversible and one-way decisions",
+     "kind": "brain",
+     "cluster": "Mental Models",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\Mental Models\\reversible_decisions.md",
+     "provenance": "vetted_source",
+     "weight": 1,
+     "brightness": 0.6,
+     "note_kind": "mental_model",
+     "updated_at": "2026-10-03",
+     "summary": "Decide reversible things quickly and alone; slow down only for one-way doors such as deleting data or publishing."
+    },
+    {
+     "id": "brain:second_order_effects",
+     "label": "Second-order effects",
+     "kind": "brain",
+     "cluster": "Mental Models",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\Mental Models\\second_order_effects.md",
+     "provenance": "vetted_source",
+     "weight": 1,
+     "brightness": 0.6,
+     "note_kind": "mental_model",
+     "updated_at": "2026-10-01",
+     "summary": "Ask \"and then what?\" twice before a change that touches many people: a faster build that hides failing checks is slower overall."
+    },
+    {
+     "id": "brain:docs_review_notes",
+     "label": "Docs review notes",
+     "kind": "brain",
+     "cluster": "Project Learnings",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\Project Learnings\\docs_review_notes.md",
+     "provenance": "agent_synthesis",
+     "weight": 1,
+     "brightness": 0.5,
+     "note_kind": "project_learning",
+     "updated_at": "2026-10-29",
+     "summary": "Before a docs page ships, run every command on the page in a clean folder, open every link and check it lands on the right heading, read each paragraph aloud and cut any sentence that does not help the reader finish the task, check that sc…"
+    },
+    {
+     "id": "brain:docs_site_v1_retro",
+     "label": "Docs site v1 retro",
+     "kind": "brain",
+     "cluster": "Project Learnings",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\Project Learnings\\docs_site_v1_retro.md",
+     "provenance": "explicit_user_statement",
+     "weight": 1,
+     "brightness": 1.0,
+     "note_kind": "project_learning",
+     "updated_at": "2026-10-24",
+     "summary": "The guide shipped on time because every page had a text check; the API reference slipped because its generator had no check until the end."
+    },
+    {
+     "id": "brain:search_relevance",
+     "label": "Search relevance notes",
+     "kind": "brain",
+     "cluster": "Project Learnings",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\Project Learnings\\search_relevance.md",
+     "provenance": "agent_synthesis",
+     "weight": 1,
+     "brightness": 0.5,
+     "note_kind": "project_learning",
+     "updated_at": "2026-10-30",
+     "summary": "Weight page titles three times above body text and show the matching sentence; readers judge a result by that sentence."
+    },
+    {
+     "id": "brain:status_updates",
+     "label": "Status updates that get read",
+     "kind": "brain",
+     "cluster": "Project Learnings",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\Project Learnings\\status_updates.md",
+     "provenance": "agent_synthesis",
+     "weight": 1,
+     "brightness": 0.5,
+     "note_kind": "project_learning",
+     "updated_at": "2026-10-27",
+     "summary": "Long status updates went unread during the v1 launch, so the team agreed a fixed shape."
+    },
+    {
+     "id": "skill:docs-review",
+     "label": "docs-review",
+     "kind": "skill",
+     "cluster": "Skills",
+     "path": "C:\\Users\\alex\\Notes\\07 Skills Registry\\docs-review\\SKILL.md",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "summary": "Review a docs page for accuracy, broken links and plain language before it ships."
+    },
+    {
+     "id": "skill:release-notes",
+     "label": "release-notes",
+     "kind": "skill",
+     "cluster": "Skills",
+     "path": "C:\\Users\\alex\\Notes\\07 Skills Registry\\release-notes\\SKILL.md",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "summary": "Turn merged pull requests into short, plain-language release notes grouped by New, Fixed and Changed."
+    },
+    {
+     "id": "skill:test-first",
+     "label": "test-first",
+     "kind": "skill",
+     "cluster": "Skills",
+     "path": "C:\\Users\\alex\\Notes\\07 Skills Registry\\test-first\\SKILL.md",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "summary": "Write the failing test or check first, then make it pass with the smallest change."
+    },
+    {
+     "id": "instr:AGENTS.md",
+     "label": "AGENTS.md",
+     "kind": "instruction",
+     "cluster": "Instructions",
+     "path": "C:\\Users\\alex\\Notes\\AGENTS.md",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "summary": "One entry point for every agent working in this notes hub."
+    },
+    {
+     "id": "instr:06 System & Governance/Agent Roles/WORKER.md",
+     "label": "WORKER.md",
+     "kind": "instruction",
+     "cluster": "Instructions",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Agent Roles\\WORKER.md",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "summary": "A worker takes one bounded task, writes only the files it owns, makes its done-check fail and then pass, and returns a short receipt."
+    },
+    {
+     "id": "instr:06 System & Governance/Preferences/INDEX.md",
+     "label": "Preferences/INDEX.md",
+     "kind": "instruction",
+     "cluster": "Instructions",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\INDEX.md",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "summary": "- [Plain language](001_plain_language.md) - [Small reviewable changes](002_small_changes.md) - [One primary action per screen](003_one_primary_action.md) - [Checks written first](004_checks_first.md) - [Quiet notifications](005_quiet_notif…"
+    },
+    {
+     "id": "instr:06 System & Governance/Brain/INDEX.md",
+     "label": "Brain/INDEX.md",
+     "kind": "instruction",
+     "cluster": "Instructions",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\INDEX.md",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "summary": "- Mental models: [Second-order effects](Mental%20Models/second_order_effects.md), [Reversible decisions](Mental%20Models/reversible_decisions.md) - Project learnings: [Docs site v1 retro](Project%20Learnings/docs_site_v1_retro.md), [Search…"
+    },
+    {
+     "id": "folder:Notes",
+     "label": "Notes",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 0
+    },
+    {
+     "id": "folder:Notes/06 System & Governance",
+     "label": "06 System & Governance",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 1
+    },
+    {
+     "id": "folder:Notes/06 System & Governance/Agent Roles",
+     "label": "Agent Roles",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Agent Roles",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:Notes/06 System & Governance/Brain",
+     "label": "Brain",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:Notes/06 System & Governance/Preferences",
+     "label": "Preferences",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:Notes/07 Skills Registry",
+     "label": "07 Skills Registry",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes\\07 Skills Registry",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 1
+    },
+    {
+     "id": "folder:Notes/07 Skills Registry/docs-review",
+     "label": "docs-review",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes\\07 Skills Registry\\docs-review",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:Notes/07 Skills Registry/release-notes",
+     "label": "release-notes",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes\\07 Skills Registry\\release-notes",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:Notes/07 Skills Registry/test-first",
+     "label": "test-first",
+     "kind": "folder",
+     "cluster": "Notes",
+     "path": "C:\\Users\\alex\\Notes\\07 Skills Registry\\test-first",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:projects",
+     "label": "projects",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 0
+    },
+    {
+     "id": "folder:projects/docs-site",
+     "label": "docs-site",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\docs-site",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 1
+    },
+    {
+     "id": "folder:projects/docs-site/content",
+     "label": "content",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\docs-site\\content",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:projects/docs-site/deploy",
+     "label": "deploy",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\docs-site\\deploy",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:projects/docs-site/public",
+     "label": "public",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\docs-site\\public",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:projects/docs-site/src",
+     "label": "src",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\docs-site\\src",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:projects/mobile-app",
+     "label": "mobile-app",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\mobile-app",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 1
+    },
+    {
+     "id": "folder:projects/mobile-app/app",
+     "label": "app",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\mobile-app\\app",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:projects/mobile-app/tests",
+     "label": "tests",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\mobile-app\\tests",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:projects/onboarding-emails",
+     "label": "onboarding-emails",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\onboarding-emails",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 1
+    },
+    {
+     "id": "folder:projects/onboarding-emails/emails",
+     "label": "emails",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\onboarding-emails\\emails",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    },
+    {
+     "id": "folder:projects/onboarding-emails/templates",
+     "label": "templates",
+     "kind": "folder",
+     "cluster": "projects",
+     "path": "C:\\Users\\alex\\Projects\\onboarding-emails\\templates",
+     "provenance": null,
+     "weight": 1,
+     "brightness": null,
+     "depth": 2
+    }
+   ],
+   "links": [
+    {
+     "source": "instr:06 System & Governance/Brain/INDEX.md",
+     "target": "brain:docs_site_v1_retro",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Brain/INDEX.md",
+     "target": "brain:reversible_decisions",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Brain/INDEX.md",
+     "target": "brain:search_relevance",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Brain/INDEX.md",
+     "target": "brain:second_order_effects",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:001_plain_language",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:002_small_changes",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:003_one_primary_action",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:004_checks_first",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:005_quiet_notifications",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:006_free_models_for_drafts",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:007_weekly_summary",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:008_docs_review_checklist",
+     "kind": "link"
+    },
+    {
+     "source": "instr:06 System & Governance/Preferences/INDEX.md",
+     "target": "pref:009_local_models_first",
+     "kind": "link"
+    },
+    {
+     "source": "instr:AGENTS.md",
+     "target": "instr:06 System & Governance/Agent Roles/WORKER.md",
+     "kind": "link"
+    },
+    {
+     "source": "instr:AGENTS.md",
+     "target": "instr:06 System & Governance/Brain/INDEX.md",
+     "kind": "link"
+    },
+    {
+     "source": "instr:AGENTS.md",
+     "target": "instr:06 System & Governance/Preferences/INDEX.md",
+     "kind": "link"
+    },
+    {
+     "source": "brain:docs_site_v1_retro",
+     "target": "brain:search_relevance",
+     "kind": "related"
+    },
+    {
+     "source": "brain:docs_site_v1_retro",
+     "target": "pref:004_checks_first",
+     "kind": "related"
+    },
+    {
+     "source": "brain:second_order_effects",
+     "target": "brain:reversible_decisions",
+     "kind": "related"
+    },
+    {
+     "source": "pref:001_plain_language",
+     "target": "pref:003_one_primary_action",
+     "kind": "related"
+    },
+    {
+     "source": "pref:002_small_changes",
+     "target": "pref:004_checks_first",
+     "kind": "related"
+    },
+    {
+     "source": "pref:003_one_primary_action",
+     "target": "pref:001_plain_language",
+     "kind": "related"
+    },
+    {
+     "source": "pref:004_checks_first",
+     "target": "pref:002_small_changes",
+     "kind": "related"
+    },
+    {
+     "source": "pref:006_free_models_for_drafts",
+     "target": "pref:004_checks_first",
+     "kind": "related"
+    },
+    {
+     "source": "pref:009_local_models_first",
+     "target": "pref:006_free_models_for_drafts",
+     "kind": "supersedes"
+    },
+    {
+     "source": "folder:Notes",
+     "target": "folder:Notes/06 System & Governance",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes",
+     "target": "folder:Notes/07 Skills Registry",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes",
+     "target": "instr:AGENTS.md",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance",
+     "target": "folder:Notes/06 System & Governance/Agent Roles",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance",
+     "target": "folder:Notes/06 System & Governance/Brain",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance",
+     "target": "folder:Notes/06 System & Governance/Preferences",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Agent Roles",
+     "target": "instr:06 System & Governance/Agent Roles/WORKER.md",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Brain",
+     "target": "brain:docs_review_notes",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Brain",
+     "target": "brain:docs_site_v1_retro",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Brain",
+     "target": "brain:reversible_decisions",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Brain",
+     "target": "brain:search_relevance",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Brain",
+     "target": "brain:second_order_effects",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Brain",
+     "target": "brain:status_updates",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Brain",
+     "target": "instr:06 System & Governance/Brain/INDEX.md",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "instr:06 System & Governance/Preferences/INDEX.md",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:001_plain_language",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:002_small_changes",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:003_one_primary_action",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:004_checks_first",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:005_quiet_notifications",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:006_free_models_for_drafts",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:007_weekly_summary",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:008_docs_review_checklist",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/06 System & Governance/Preferences",
+     "target": "pref:009_local_models_first",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/07 Skills Registry",
+     "target": "folder:Notes/07 Skills Registry/docs-review",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/07 Skills Registry",
+     "target": "folder:Notes/07 Skills Registry/release-notes",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/07 Skills Registry",
+     "target": "folder:Notes/07 Skills Registry/test-first",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/07 Skills Registry/docs-review",
+     "target": "skill:docs-review",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/07 Skills Registry/release-notes",
+     "target": "skill:release-notes",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:Notes/07 Skills Registry/test-first",
+     "target": "skill:test-first",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects",
+     "target": "folder:projects/docs-site",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects",
+     "target": "folder:projects/mobile-app",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects",
+     "target": "folder:projects/onboarding-emails",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects/docs-site",
+     "target": "folder:projects/docs-site/content",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects/docs-site",
+     "target": "folder:projects/docs-site/deploy",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects/docs-site",
+     "target": "folder:projects/docs-site/public",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects/docs-site",
+     "target": "folder:projects/docs-site/src",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects/mobile-app",
+     "target": "folder:projects/mobile-app/app",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects/mobile-app",
+     "target": "folder:projects/mobile-app/tests",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects/onboarding-emails",
+     "target": "folder:projects/onboarding-emails/emails",
+     "kind": "contains"
+    },
+    {
+     "source": "folder:projects/onboarding-emails",
+     "target": "folder:projects/onboarding-emails/templates",
+     "kind": "contains"
+    },
+    {
+     "source": "instr:AGENTS.md",
+     "target": "skill:test-first",
+     "kind": "cites"
+    }
+   ]
+  },
+  "/api/brain/overlaps": {
+   "schema_version": 1,
+   "algo_version": 1,
+   "generated": true,
+   "read_only": true,
+   "built_at": "2026-11-05T21:51:09+00:00",
+   "roots": {
+    "drive": "C:\\Users\\alex\\Notes",
+    "disk": "C:\\Users\\alex\\Projects"
+   },
+   "notes_scanned": 22,
+   "counts": {
+    "near_duplicate": 2,
+    "passage": 0,
+    "superseded": 0,
+    "total": 2
+   },
+   "cut_words_total": 150,
+   "thresholds": {
+    "shingle": 5,
+    "near_jaccard": 0.5,
+    "near_containment": 0.8,
+    "near_min_shared": 40,
+    "passage_min_words": 40,
+    "passage_containment": 0.8
+   },
+   "findings": [
+    {
+     "id": "f5def334783c",
+     "type": "near_duplicate",
+     "notes": [
+      {
+       "id": "pref:008_docs_review_checklist",
+       "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\008_docs_review_checklist.md",
+       "title": "Docs review checklist",
+       "kind": "preference",
+       "name": "008_docs_review_checklist.md",
+       "role": "keep"
+      },
+      {
+       "id": "brain:docs_review_notes",
+       "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\Project Learnings\\docs_review_notes.md",
+       "title": "Docs review notes",
+       "kind": "brain",
+       "name": "docs_review_notes.md",
+       "role": "trim"
+      }
+     ],
+     "similarity": 0.812,
+     "containment": 0.965,
+     "shared_words": 86,
+     "cut_words": 86,
+     "excerpt": "Before a docs page ships, run every command on the page in a clean folder, open every link and check it lands on the right heading, read each paragraph aloud and cut any sentence that does not help the reader finish the task, check that screenshots match the current interface, and make sure the pag…",
+     "suggestion": "Keep 008_docs_review_checklist.md; move anything unique from docs_review_notes.md into it and replace the rest of docs_review_notes.md with a link."
+    },
+    {
+     "id": "7a2defc776bd",
+     "type": "near_duplicate",
+     "notes": [
+      {
+       "id": "pref:007_weekly_summary",
+       "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Preferences\\007_weekly_summary.md",
+       "title": "Weekly summary format",
+       "kind": "preference",
+       "name": "007_weekly_summary.md",
+       "role": "keep"
+      },
+      {
+       "id": "brain:status_updates",
+       "path": "C:\\Users\\alex\\Notes\\06 System & Governance\\Brain\\Project Learnings\\status_updates.md",
+       "title": "Status updates that get read",
+       "kind": "brain",
+       "name": "status_updates.md",
+       "role": "trim"
+      }
+     ],
+     "similarity": 0.55,
+     "containment": 0.789,
+     "shared_words": 64,
+     "cut_words": 64,
+     "excerpt": "Every weekly summary opens with one sentence on what shipped, then a short list of what is blocked and who can unblock it, then the decisions that need an answer this week. Keep it under two hundred words, link each item to its task, and leave out anything that did not change since last week so the…",
+     "suggestion": "Keep 007_weekly_summary.md; move anything unique from status_updates.md into it and replace the rest of status_updates.md with a link."
+    }
+   ],
+   "cached": false,
+   "source_count": 22
+  },
+  "/api/interview": {
+   "schema_version": 2,
+   "title": "Git basics",
+   "next": {
+    "mode": "adaptive",
+    "competency": "remote",
+    "concept": "remote",
+    "title": "Push and pull with a remote",
+    "group": "collaboration",
+    "mastery": 0,
+    "status": "learning",
+    "explain": "A remote such as origin is another copy of the repository, usually on a server. git push sends your commits there, git fetch downloads new commits, and git pull fetches and merges them into your branch.",
+    "builds_on": [
+     {
+      "id": "commit",
+      "title": "Stage and commit changes"
+     }
+    ],
+    "unlocks": [
+     "undo"
+    ],
+    "question": {
+     "id": "q-remote",
+     "text": "What is the difference between git fetch and git pull?",
+     "also_tests": []
+    },
+    "check_question": "What is the difference between git fetch and git pull?",
+    "options": null,
+    "answer": null,
+    "model_answer": {
+     "kind": "outline",
+     "bullets": [
+      {
+       "label": "",
+       "text": "fetch downloads new commits and updates origin/* names only."
+      },
+      {
+       "label": "",
+       "text": "pull is fetch followed by a merge (or rebase) into your branch."
+      },
+      {
+       "label": "",
+       "text": "fetch first when you want to look before you merge."
+      }
+     ],
+     "angle": null,
+     "story": null,
+     "sixty": null,
+     "say_it": null,
+     "limits": null,
+     "evidence": [],
+     "also": []
+    },
+    "card": {
+     "reps": 1,
+     "interval": 1.0,
+     "due_at": "2026-11-06T21:50:53+00:00",
+     "due": false,
+     "new": false
+    },
+    "intervals": {
+     "again": "10 min",
+     "hard": "1 day",
+     "good": "3 days",
+     "easy": "3 days"
+    },
+    "evidence": [],
+    "remaining": 4,
+    "due_total": 0
+   },
+   "graph": {
+    "project": "interview",
+    "title": "Git basics",
+    "nodes": [
+     {
+      "id": "repo",
+      "title": "What a repository is",
+      "status": "done",
+      "display_status": "done",
+      "learn_status": "mastered",
+      "group": "foundations",
+      "mastery": 4,
+      "attempts": 0,
+      "deps": [],
+      "wave": 0,
+      "lane": "foundations",
+      "cluster": "foundations",
+      "weight": 5,
+      "explain": "A repository is a folder whose full history Git keeps in a hidden .git folder. Every saved state of the files is a commit, and the history is the chain of commits back to the first one.",
+      "evidence": [],
+      "questions": [
+       "q-repo"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "commit",
+      "title": "Stage and commit changes",
+      "status": "done",
+      "display_status": "done",
+      "learn_status": "mastered",
+      "group": "foundations",
+      "mastery": 3,
+      "attempts": 2,
+      "deps": [
+       "repo"
+      ],
+      "wave": 1,
+      "lane": "foundations",
+      "cluster": "foundations",
+      "weight": 4,
+      "explain": "Git records changes in two steps: git add puts chosen changes in the staging area, and git commit saves exactly what is staged with a message. Small commits with clear messages make history easy to read and undo.",
+      "evidence": [],
+      "questions": [
+       "q-commit"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "branch",
+      "title": "Work on a branch",
+      "status": "running",
+      "display_status": "running",
+      "learn_status": "learning",
+      "group": "branching",
+      "mastery": 1,
+      "attempts": 1,
+      "deps": [
+       "commit"
+      ],
+      "wave": 2,
+      "lane": "branching",
+      "cluster": "branching",
+      "weight": 2,
+      "explain": "A branch is a movable name that points at a commit. New commits move the current branch forward, so you can try an idea on its own branch without touching main.",
+      "evidence": [],
+      "questions": [
+       "q-branch",
+       "q-merge"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "merge",
+      "title": "Merge a branch back",
+      "status": "not_started",
+      "display_status": "not_started",
+      "learn_status": "untouched",
+      "group": "branching",
+      "mastery": 0,
+      "attempts": 0,
+      "deps": [
+       "branch"
+      ],
+      "wave": 3,
+      "lane": "branching",
+      "cluster": "branching",
+      "weight": 1,
+      "explain": "git merge joins another branch's commits into the current one. When both sides changed the same lines Git stops with a conflict: edit the file to the version you want, add it and commit.",
+      "evidence": [],
+      "questions": [
+       "q-merge"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "remote",
+      "title": "Push and pull with a remote",
+      "status": "running",
+      "display_status": "running",
+      "learn_status": "learning",
+      "group": "collaboration",
+      "mastery": 0,
+      "attempts": 1,
+      "deps": [
+       "commit"
+      ],
+      "wave": 2,
+      "lane": "collaboration",
+      "cluster": "collaboration",
+      "weight": 1,
+      "explain": "A remote such as origin is another copy of the repository, usually on a server. git push sends your commits there, git fetch downloads new commits, and git pull fetches and merges them into your branch.",
+      "evidence": [],
+      "questions": [
+       "q-remote",
+       "q-undo"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "undo",
+      "title": "Undo safely",
+      "status": "not_started",
+      "display_status": "not_started",
+      "learn_status": "untouched",
+      "group": "collaboration",
+      "mastery": 0,
+      "attempts": 0,
+      "deps": [
+       "merge",
+       "remote"
+      ],
+      "wave": 4,
+      "lane": "collaboration",
+      "cluster": "collaboration",
+      "weight": 1,
+      "explain": "git restore throws away uncommitted edits to a file, git revert adds a new commit that undoes an old one, and git reset moves a branch. Prefer revert for anything already pushed, because it never rewrites shared history.",
+      "evidence": [],
+      "questions": [
+       "q-undo"
+      ],
+      "due": 0,
+      "stories": []
+     }
+    ],
+    "edges": [
+     [
+      "repo",
+      "commit"
+     ],
+     [
+      "commit",
+      "branch"
+     ],
+     [
+      "branch",
+      "merge"
+     ],
+     [
+      "commit",
+      "remote"
+     ],
+     [
+      "merge",
+      "undo"
+     ],
+     [
+      "remote",
+      "undo"
+     ]
+    ],
+    "links": [
+     {
+      "source": "repo",
+      "target": "commit",
+      "kind": "prereq"
+     },
+     {
+      "source": "commit",
+      "target": "branch",
+      "kind": "prereq"
+     },
+     {
+      "source": "branch",
+      "target": "merge",
+      "kind": "prereq"
+     },
+     {
+      "source": "commit",
+      "target": "remote",
+      "kind": "prereq"
+     },
+     {
+      "source": "merge",
+      "target": "undo",
+      "kind": "prereq"
+     },
+     {
+      "source": "remote",
+      "target": "undo",
+      "kind": "prereq"
+     }
+    ],
+    "counts": {
+     "mastered": 2,
+     "ready": 0,
+     "learning": 2,
+     "untouched": 2
+    },
+    "max_mastery": 4,
+    "unlock_at": 3,
+    "due": 0
+   },
+   "stories": [],
+   "questions": [
+    {
+     "id": "q-repo",
+     "text": "What does Git keep inside the .git folder?",
+     "competencies": [
+      "repo"
+     ],
+     "competency_titles": [
+      "What a repository is"
+     ],
+     "stories": [],
+     "roles": [],
+     "weight": 1
+    },
+    {
+     "id": "q-commit",
+     "text": "Why does Git have a staging area between editing and committing?",
+     "competencies": [
+      "commit"
+     ],
+     "competency_titles": [
+      "Stage and commit changes"
+     ],
+     "stories": [],
+     "roles": [],
+     "weight": 2
+    },
+    {
+     "id": "q-branch",
+     "text": "What actually happens when you create a branch?",
+     "competencies": [
+      "branch"
+     ],
+     "competency_titles": [
+      "Work on a branch"
+     ],
+     "stories": [],
+     "roles": [],
+     "weight": 2
+    },
+    {
+     "id": "q-merge",
+     "text": "Walk through resolving a merge conflict.",
+     "competencies": [
+      "merge",
+      "branch"
+     ],
+     "competency_titles": [
+      "Merge a branch back",
+      "Work on a branch"
+     ],
+     "stories": [],
+     "roles": [],
+     "weight": 2
+    },
+    {
+     "id": "q-remote",
+     "text": "What is the difference between git fetch and git pull?",
+     "competencies": [
+      "remote"
+     ],
+     "competency_titles": [
+      "Push and pull with a remote"
+     ],
+     "stories": [],
+     "roles": [],
+     "weight": 1
+    },
+    {
+     "id": "q-undo",
+     "text": "A bad commit is already pushed. How do you undo it?",
+     "competencies": [
+      "undo",
+      "remote"
+     ],
+     "competency_titles": [
+      "Undo safely",
+      "Push and pull with a remote"
+     ],
+     "stories": [],
+     "roles": [],
+     "weight": 2
+    }
+   ],
+   "roles": [],
+   "counts": {
+    "mastered": 2,
+    "ready": 0,
+    "learning": 2,
+    "untouched": 2
+   },
+   "total": 6,
+   "due": 0
+  },
+  "/api/learn": {
+   "concept_graph": {
+    "project": "interview",
+    "title": "Git basics",
+    "nodes": [
+     {
+      "id": "repo",
+      "title": "What a repository is",
+      "status": "done",
+      "display_status": "done",
+      "learn_status": "mastered",
+      "group": "foundations",
+      "mastery": 4,
+      "attempts": 0,
+      "deps": [],
+      "wave": 0,
+      "lane": "foundations",
+      "cluster": "foundations",
+      "weight": 5,
+      "explain": "A repository is a folder whose full history Git keeps in a hidden .git folder. Every saved state of the files is a commit, and the history is the chain of commits back to the first one.",
+      "evidence": [],
+      "questions": [
+       "q-repo"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "commit",
+      "title": "Stage and commit changes",
+      "status": "done",
+      "display_status": "done",
+      "learn_status": "mastered",
+      "group": "foundations",
+      "mastery": 3,
+      "attempts": 2,
+      "deps": [
+       "repo"
+      ],
+      "wave": 1,
+      "lane": "foundations",
+      "cluster": "foundations",
+      "weight": 4,
+      "explain": "Git records changes in two steps: git add puts chosen changes in the staging area, and git commit saves exactly what is staged with a message. Small commits with clear messages make history easy to read and undo.",
+      "evidence": [],
+      "questions": [
+       "q-commit"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "branch",
+      "title": "Work on a branch",
+      "status": "running",
+      "display_status": "running",
+      "learn_status": "learning",
+      "group": "branching",
+      "mastery": 1,
+      "attempts": 1,
+      "deps": [
+       "commit"
+      ],
+      "wave": 2,
+      "lane": "branching",
+      "cluster": "branching",
+      "weight": 2,
+      "explain": "A branch is a movable name that points at a commit. New commits move the current branch forward, so you can try an idea on its own branch without touching main.",
+      "evidence": [],
+      "questions": [
+       "q-branch",
+       "q-merge"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "merge",
+      "title": "Merge a branch back",
+      "status": "not_started",
+      "display_status": "not_started",
+      "learn_status": "untouched",
+      "group": "branching",
+      "mastery": 0,
+      "attempts": 0,
+      "deps": [
+       "branch"
+      ],
+      "wave": 3,
+      "lane": "branching",
+      "cluster": "branching",
+      "weight": 1,
+      "explain": "git merge joins another branch's commits into the current one. When both sides changed the same lines Git stops with a conflict: edit the file to the version you want, add it and commit.",
+      "evidence": [],
+      "questions": [
+       "q-merge"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "remote",
+      "title": "Push and pull with a remote",
+      "status": "running",
+      "display_status": "running",
+      "learn_status": "learning",
+      "group": "collaboration",
+      "mastery": 0,
+      "attempts": 1,
+      "deps": [
+       "commit"
+      ],
+      "wave": 2,
+      "lane": "collaboration",
+      "cluster": "collaboration",
+      "weight": 1,
+      "explain": "A remote such as origin is another copy of the repository, usually on a server. git push sends your commits there, git fetch downloads new commits, and git pull fetches and merges them into your branch.",
+      "evidence": [],
+      "questions": [
+       "q-remote",
+       "q-undo"
+      ],
+      "due": 0,
+      "stories": []
+     },
+     {
+      "id": "undo",
+      "title": "Undo safely",
+      "status": "not_started",
+      "display_status": "not_started",
+      "learn_status": "untouched",
+      "group": "collaboration",
+      "mastery": 0,
+      "attempts": 0,
+      "deps": [
+       "merge",
+       "remote"
+      ],
+      "wave": 4,
+      "lane": "collaboration",
+      "cluster": "collaboration",
+      "weight": 1,
+      "explain": "git restore throws away uncommitted edits to a file, git revert adds a new commit that undoes an old one, and git reset moves a branch. Prefer revert for anything already pushed, because it never rewrites shared history.",
+      "evidence": [],
+      "questions": [
+       "q-undo"
+      ],
+      "due": 0,
+      "stories": []
+     }
+    ],
+    "edges": [
+     [
+      "repo",
+      "commit"
+     ],
+     [
+      "commit",
+      "branch"
+     ],
+     [
+      "branch",
+      "merge"
+     ],
+     [
+      "commit",
+      "remote"
+     ],
+     [
+      "merge",
+      "undo"
+     ],
+     [
+      "remote",
+      "undo"
+     ]
+    ],
+    "links": [
+     {
+      "source": "repo",
+      "target": "commit",
+      "kind": "prereq"
+     },
+     {
+      "source": "commit",
+      "target": "branch",
+      "kind": "prereq"
+     },
+     {
+      "source": "branch",
+      "target": "merge",
+      "kind": "prereq"
+     },
+     {
+      "source": "commit",
+      "target": "remote",
+      "kind": "prereq"
+     },
+     {
+      "source": "merge",
+      "target": "undo",
+      "kind": "prereq"
+     },
+     {
+      "source": "remote",
+      "target": "undo",
+      "kind": "prereq"
+     }
+    ],
+    "counts": {
+     "mastered": 2,
+     "ready": 0,
+     "learning": 2,
+     "untouched": 2
+    },
+    "max_mastery": 4,
+    "unlock_at": 3,
+    "due": 0
+   },
+   "next_step": {
+    "mode": "adaptive",
+    "competency": "remote",
+    "concept": "remote",
+    "title": "Push and pull with a remote",
+    "group": "collaboration",
+    "mastery": 0,
+    "status": "learning",
+    "explain": "A remote such as origin is another copy of the repository, usually on a server. git push sends your commits there, git fetch downloads new commits, and git pull fetches and merges them into your branch.",
+    "builds_on": [
+     {
+      "id": "commit",
+      "title": "Stage and commit changes"
+     }
+    ],
+    "unlocks": [
+     "undo"
+    ],
+    "question": {
+     "id": "q-remote",
+     "text": "What is the difference between git fetch and git pull?",
+     "also_tests": []
+    },
+    "check_question": "What is the difference between git fetch and git pull?",
+    "options": null,
+    "answer": null,
+    "model_answer": {
+     "kind": "outline",
+     "bullets": [
+      {
+       "label": "",
+       "text": "fetch downloads new commits and updates origin/* names only."
+      },
+      {
+       "label": "",
+       "text": "pull is fetch followed by a merge (or rebase) into your branch."
+      },
+      {
+       "label": "",
+       "text": "fetch first when you want to look before you merge."
+      }
+     ],
+     "angle": null,
+     "story": null,
+     "sixty": null,
+     "say_it": null,
+     "limits": null,
+     "evidence": [],
+     "also": []
+    },
+    "card": {
+     "reps": 1,
+     "interval": 1.0,
+     "due_at": "2026-11-06T21:50:53+00:00",
+     "due": false,
+     "new": false
+    },
+    "intervals": {
+     "again": "10 min",
+     "hard": "1 day",
+     "good": "3 days",
+     "easy": "3 days"
+    },
+    "evidence": [],
+    "remaining": 4,
+    "due_total": 0
+   },
+   "stories": []
+  },
+  "/api/plan/deep/options": {
+   "models": [
+    {
+     "id": "claude-opus",
+     "label": "Claude Opus",
+     "free": false,
+     "enabled": true
+    },
+    {
+     "id": "claude-sonnet",
+     "label": "Claude Sonnet",
+     "free": false,
+     "enabled": true
+    },
+    {
+     "id": "claude-fable",
+     "label": "Claude Fable",
+     "free": false,
+     "enabled": true
+    },
+    {
+     "id": "freebuff",
+     "label": "Local model (free)",
+     "free": true,
+     "enabled": true
+    }
+   ],
+   "efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+   ],
+   "default": {
+    "model": "claude-opus",
+    "effort": "high",
+    "why": null,
+    "source": "fixed"
+   }
+  },
+  "/api/pick?kind=chat": {
+   "model": "sonnet",
+   "effort": "medium",
+   "why": "Strongest switched-on model with the most usage left this week.",
+   "label": "Claude Sonnet 5",
+   "route": "claude_code",
+   "dsh": null
+  },
+  "/api/usage": {
+   "pools": [
+    {
+     "pool": "claude_5h",
+     "label": "Claude 5 hours",
+     "remaining_percent": 62.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-06T00:50:52+00:00",
+     "status": "FRESH",
+     "source": "claude usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "claude_week",
+     "label": "Claude week (all models)",
+     "remaining_percent": 41.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-09T05:50:52+00:00",
+     "status": "FRESH",
+     "source": "claude usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "codex_5h",
+     "label": "Codex 5 hours",
+     "remaining_percent": 70.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-05T23:50:52+00:00",
+     "status": "FRESH",
+     "source": "codex usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "codex_week",
+     "label": "Codex week",
+     "remaining_percent": 55.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-10T01:50:52+00:00",
+     "status": "FRESH",
+     "source": "codex usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "antigravity_week",
+     "label": "Gemini CLI week",
+     "remaining_percent": 48.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-10T21:50:52+00:00",
+     "status": "FRESH",
+     "source": "antigravity usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "antigravity_gemini_5h",
+     "label": "Gemini CLI 5 hours",
+     "remaining_percent": 66.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-06T01:50:52+00:00",
+     "status": "FRESH",
+     "source": "antigravity usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "antigravity_claude_week",
+     "label": "Gemini CLI partner models week",
+     "remaining_percent": 37.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-10T21:50:52+00:00",
+     "status": "FRESH",
+     "source": "antigravity usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "antigravity_claude_5h",
+     "label": "Gemini CLI partner models 5 hours",
+     "remaining_percent": 58.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-06T01:50:52+00:00",
+     "status": "FRESH",
+     "source": "antigravity usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "antigravity_argon_week",
+     "label": "Gemini CLI Pro week",
+     "remaining_percent": 44.0,
+     "observed_at": "2026-11-05T21:50:52+00:00",
+     "resets_at": "2026-11-10T21:50:52+00:00",
+     "status": "FRESH",
+     "source": "antigravity usage (demo)",
+     "age_seconds": 17,
+     "upstream_status": null,
+     "refreshed_at": "2026-11-05T21:50:52+00:00"
+    },
+    {
+     "pool": "gemini_app",
+     "label": "Gemini app",
+     "remaining_percent": null,
+     "observed_at": null,
+     "resets_at": null,
+     "status": "UNKNOWN",
+     "source": "no local or official usage source for the Gemini app (manual)",
+     "age_seconds": null,
+     "upstream_status": null,
+     "refreshed_at": null
+    }
+   ],
+   "clock": {
+    "next": {
+     "pool": "codex_5h",
+     "resets_at": "2026-11-05T23:50:52+00:00",
+     "status": "FRESH",
+     "in_seconds": 7182
+    },
+    "resets": [
+     {
+      "pool": "codex_5h",
+      "resets_at": "2026-11-05T23:50:52+00:00",
+      "status": "FRESH",
+      "in_seconds": 7182
+     },
+     {
+      "pool": "claude_5h",
+      "resets_at": "2026-11-06T00:50:52+00:00",
+      "status": "FRESH",
+      "in_seconds": 10782
+     },
+     {
+      "pool": "claude_week",
+      "resets_at": "2026-11-09T05:50:52+00:00",
+      "status": "FRESH",
+      "in_seconds": 287982
+     },
+     {
+      "pool": "codex_week",
+      "resets_at": "2026-11-10T01:50:52+00:00",
+      "status": "FRESH",
+      "in_seconds": 359982
+     }
+    ]
+   }
+  },
+  "/api/planner/sessions": {
+   "sessions": []
+  },
+  "/api/plan/deep/sessions": {
+   "sessions": []
+  },
+  "/api/claims": {
+   "project": "onboarding-emails",
+   "claims": {
+    "E2": {
+     "by": "Gemini",
+     "worktree": null,
+     "cwd": "C:\\Users\\alex\\Projects\\onboarding-emails",
+     "environment": "local",
+     "since": "2026-11-05T21:50:52+00:00",
+     "refreshed_at": "2026-11-05T21:50:52+00:00",
+     "stale": false
+    }
+   }
+  },
+  "/api/model_health": {
+   "routes": {},
+   "lists": {},
+   "updated_at": null,
+   "running": false,
+   "probe_every_s": 3600
+  },
+  "/api/board?project=docs-site-v1": {
+   "project": {
+    "id": "docs-site-v1",
+    "title": "Docs site v1",
+    "cwd": "C:\\Users\\alex\\Projects\\docs-site",
+    "family": "docs-site",
+    "family_title": "Docs site",
+    "version": 1,
+    "status": "archived",
+    "draft": false,
+    "archived": true
+   },
+   "revision": 23,
+   "fields": [
+    "id",
+    "title",
+    "status",
+    "display_status",
+    "deps",
+    "wave",
+    "pool",
+    "model",
+    "effort",
+    "attempts",
+    "actor",
+    "lane",
+    "checks",
+    "recommended",
+    "claim",
+    "kind",
+    "crosses"
+   ],
+   "nodes": [
+    [
+     "A1",
+     "Pick the static site generator",
+     "done",
+     "done",
+     [],
+     0,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "build"
+    ],
+    [
+     "A2",
+     "Write the getting-started guide",
+     "done",
+     "done",
+     [
+      "A1"
+     ],
+     1,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "content",
+     null,
+     null,
+     null,
+     null,
+     {
+      "A1": "the chosen generator and its folder layout"
+     }
+    ],
+    [
+     "A3",
+     "Generate the API reference",
+     "done",
+     "done",
+     [
+      "A1"
+     ],
+     1,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "build",
+     null,
+     null,
+     null,
+     "code",
+     {
+      "A1": "the generator config"
+     }
+    ],
+    [
+     "A4",
+     "Deploy a preview",
+     "done",
+     "done",
+     [
+      "A2",
+      "A3"
+     ],
+     2,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "launch",
+     null,
+     null,
+     null,
+     "code",
+     {
+      "A2": "the guide pages",
+      "A3": "the reference pages"
+     }
+    ],
+    [
+     "A5",
+     "You review the preview",
+     "done",
+     "done",
+     [
+      "A4"
+     ],
+     3,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "launch",
+     null,
+     null,
+     null,
+     "gate",
+     {
+      "A4": "the preview URL"
+     }
+    ]
+   ],
+   "edges": [
+    [
+     "A1",
+     "A2"
+    ],
+    [
+     "A1",
+     "A3"
+    ],
+    [
+     "A2",
+     "A4"
+    ],
+    [
+     "A3",
+     "A4"
+    ],
+    [
+     "A4",
+     "A5"
+    ]
+   ],
+   "counts": {
+    "not_started": 0,
+    "ready": 0,
+    "running": 0,
+    "submitted": 0,
+    "done": 5,
+    "error": 0,
+    "needs_you": 0,
+    "skipped": 0,
+    "carried": 0,
+    "total": 5
+   },
+   "integrity_ok": true,
+   "integrity": []
+  },
+  "/api/constraints?project=docs-site-v1": {
+   "project": "docs-site-v1",
+   "constraints": [
+    {
+     "project": "docs-site-v1",
+     "node": "A5",
+     "accepted": "A5 You review the preview: Open the preview, read the guide end to end and say whether v1 can go live.",
+     "derived": "Alex approved \"I read the preview and v1 can go live\"; a change here needs his eye again",
+     "lands_in": "lane launch of docs-site-v1",
+     "line": "ACCEPTED: A5 You review the preview: Open the preview, read the guide end to end and say whether v1 can go live. / DERIVED: Alex approved \"I read the preview and v1 can go live\"; a change here needs his eye again / LANDS IN: lane launch of docs-site-v1",
+     "source": "template",
+     "at": "2026-11-05T21:51:09+00:00"
+    },
+    {
+     "project": "docs-site-v1",
+     "node": "A4",
+     "accepted": "A4 Deploy a preview: Build the site and deploy it to the preview host; write the preview URL to deploy/preview.txt.",
+     "derived": "keep deploy/preview.txt in place",
+     "lands_in": "deploy/preview.txt",
+     "line": "ACCEPTED: A4 Deploy a preview: Build the site and deploy it to the preview host; write the preview URL to deploy/preview.txt. / DERIVED: keep deploy/preview.txt in place / LANDS IN: deploy/preview.txt",
+     "source": "template",
+     "at": "2026-11-05T21:51:09+00:00"
+    },
+    {
+     "project": "docs-site-v1",
+     "node": "A3",
+     "accepted": "A3 Generate the API reference: Run the reference generator over src/ and write one page per public module under content/reference/.",
+     "derived": "keep `npm run docs:reference -- --check` passing",
+     "lands_in": "lane build of docs-site-v1",
+     "line": "ACCEPTED: A3 Generate the API reference: Run the reference generator over src/ and write one page per public module under content/reference/. / DERIVED: keep `npm run docs:reference -- --check` passing / LANDS IN: lane build of docs-site-v1",
+     "source": "template",
+     "at": "2026-11-05T21:51:09+00:00"
+    },
+    {
+     "project": "docs-site-v1",
+     "node": "A2",
+     "accepted": "A2 Write the getting-started guide: Write content/getting-started.md: install, first project, first deploy, each step with a command to copy.",
+     "derived": "keep 'First deploy' in content/getting-started.md",
+     "lands_in": "content/getting-started.md",
+     "line": "ACCEPTED: A2 Write the getting-started guide: Write content/getting-started.md: install, first project, first deploy, each step with a command to copy. / DERIVED: keep 'First deploy' in content/getting-started.md / LANDS IN: content/getting-started.md",
+     "source": "template",
+     "at": "2026-11-05T21:51:09+00:00"
+    },
+    {
+     "project": "docs-site-v1",
+     "node": "A1",
+     "accepted": "A1 Pick the static site generator: Compare two static site generators on build time, search support and theming, and write the choice to docs/decisions/ssg.md.",
+     "derived": "keep docs/decisions/ssg.md in place",
+     "lands_in": "docs/decisions/ssg.md",
+     "line": "ACCEPTED: A1 Pick the static site generator: Compare two static site generators on build time, search support and theming, and write the choice to docs/decisions/ssg.md. / DERIVED: keep docs/decisions/ssg.md in place / LANDS IN: docs/decisions/ssg.md",
+     "source": "template",
+     "at": "2026-11-05T21:51:09+00:00"
+    }
+   ]
+  },
+  "/api/events?project=docs-site-v1&since=0&auto=1": {
+   "events": [
+    {
+     "seq": 1,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": null,
+     "kind": "import",
+     "actor": "owner",
+     "summary": "Imported the plan 'Docs site v1' with 5 tasks.",
+     "data": {
+      "nodes": 5,
+      "reset": [],
+      "draft": false,
+      "revision": 1
+     }
+    },
+    {
+     "seq": 2,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A1",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A1 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 2
+     }
+    },
+    {
+     "seq": 3,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A2",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A2 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 3
+     }
+    },
+    {
+     "seq": 4,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A3",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A3 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 4
+     }
+    },
+    {
+     "seq": 5,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A4",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A4 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 5
+     }
+    },
+    {
+     "seq": 6,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A5",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A5 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 6
+     }
+    }
+   ]
+  },
+  "/api/history?project=docs-site-v1": {
+   "family": {
+    "id": "docs-site",
+    "title": "Docs site"
+   },
+   "current": "docs-site-v2",
+   "versions": [
+    {
+     "project": "docs-site-v1",
+     "title": "Docs site v1",
+     "version": 1,
+     "archived": true,
+     "status": "active",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "counts": {
+      "done": 5,
+      "open": 0,
+      "skipped": 0,
+      "carried": 0
+     }
+    },
+    {
+     "project": "docs-site-v2",
+     "title": "Docs site v2",
+     "version": 2,
+     "archived": false,
+     "status": "active",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "counts": {
+      "done": 7,
+      "open": 7,
+      "skipped": 0,
+      "carried": 0
+     }
+    }
+   ],
+   "skipped": []
+  },
+  "/api/node?project=docs-site-v1&id=A1": {
+   "node": {
+    "project_id": "docs-site-v1",
+    "id": "A1",
+    "title": "Pick the static site generator",
+    "goal": "Compare two static site generators on build time, search support and theming, and write the choice to docs/decisions/ssg.md.",
+    "goal_hash": "957e791357eb5143936b51e331560b42b6b6ef89122bce49747c9c76ed752393",
+    "check_hash": "e19feceb97c61d8db01d78a4ef0b3a6f23ffb564b2b98ca01fa2268a38bfd5c6",
+    "owner": "lead",
+    "lane": "build",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "files_exist",
+     "paths": [
+      "docs/decisions/ssg.md"
+     ]
+    },
+    "deps": [],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 2,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A1",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A1 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 2
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v1&id=A1": {
+   "project": "docs-site-v1",
+   "node": "A1",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v1&id=A1": {
+   "model": "agent:chatmode",
+   "effort": "low",
+   "why": "Strongest working model for a easy task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v1&id=A2": {
+   "node": {
+    "project_id": "docs-site-v1",
+    "id": "A2",
+    "title": "Write the getting-started guide",
+    "goal": "Write content/getting-started.md: install, first project, first deploy, each step with a command to copy.",
+    "goal_hash": "0d6859b97424eca8895bc951f71094fe69492f9697015af4c4a1f4563de39223",
+    "check_hash": "6740f55342994f22a498d769756fed921b100c0841c1cf47c8b4315ec8509fc3",
+    "owner": "lead",
+    "lane": "content",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "text_present",
+     "path": "content/getting-started.md",
+     "text": "First deploy"
+    },
+    "deps": [
+     "A1"
+    ],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 3,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A2",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A2 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 3
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: A1",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v1&id=A2": {
+   "project": "docs-site-v1",
+   "node": "A2",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: A1",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v1&id=A2": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v1&id=A3": {
+   "node": {
+    "project_id": "docs-site-v1",
+    "id": "A3",
+    "title": "Generate the API reference",
+    "goal": "Run the reference generator over src/ and write one page per public module under content/reference/.",
+    "goal_hash": "95936b22554035371477d0878b4a4022dd827fa60dd514caa4a018fd4257dd2d",
+    "check_hash": "7b11b1cca0057fa06132b05e16fbdf1d54f941ed54f9aba6ea2800963cf51b1d",
+    "owner": "lead",
+    "lane": "build",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "command",
+     "run": "npm run docs:reference -- --check"
+    },
+    "deps": [
+     "A1"
+    ],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 4,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A3",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A3 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 4
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: A1",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v1&id=A3": {
+   "project": "docs-site-v1",
+   "node": "A3",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: A1",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v1&id=A3": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v1&id=A4": {
+   "node": {
+    "project_id": "docs-site-v1",
+    "id": "A4",
+    "title": "Deploy a preview",
+    "goal": "Build the site and deploy it to the preview host; write the preview URL to deploy/preview.txt.",
+    "goal_hash": "f1841f5dee284a04f074cc4ba9ff4871e00e7218f4f4fcb3058dc7fdeef38419",
+    "check_hash": "a3b3b18f7e4398cdb1d30bdd0cc7b303cff20c137fe36e52bba1a54b406d2d46",
+    "owner": "lead",
+    "lane": "launch",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "files_exist",
+     "paths": [
+      "deploy/preview.txt"
+     ]
+    },
+    "deps": [
+     "A2",
+     "A3"
+    ],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 5,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A4",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A4 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 5
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: A2, A3",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v1&id=A4": {
+   "project": "docs-site-v1",
+   "node": "A4",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: A2, A3",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v1&id=A4": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v1&id=A5": {
+   "node": {
+    "project_id": "docs-site-v1",
+    "id": "A5",
+    "title": "You review the preview",
+    "goal": "Open the preview, read the guide end to end and say whether v1 can go live.",
+    "goal_hash": "d3499ac9a0bd9009c79d74c3d6e61acdb033813223f05969f357be683611f666",
+    "check_hash": "947de8eda6c467f343684f74b9fb36d9864671c5ac8a035069dc41372ef8fba7",
+    "owner": "lead",
+    "lane": "launch",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "human",
+     "prompt": "I read the preview and v1 can go live"
+    },
+    "deps": [
+     "A4"
+    ],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 6,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v1",
+     "node_id": "A5",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task A5 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 6
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: A4",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v1&id=A5": {
+   "project": "docs-site-v1",
+   "node": "A5",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: A4",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v1&id=A5": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/board?project=docs-site-v2": {
+   "project": {
+    "id": "docs-site-v2",
+    "title": "Docs site v2",
+    "cwd": "C:\\Users\\alex\\Projects\\docs-site",
+    "family": "docs-site",
+    "family_title": "Docs site",
+    "version": 2,
+    "status": "active",
+    "draft": false,
+    "archived": false
+   },
+   "revision": 23,
+   "fields": [
+    "id",
+    "title",
+    "status",
+    "display_status",
+    "deps",
+    "wave",
+    "pool",
+    "model",
+    "effort",
+    "attempts",
+    "actor",
+    "lane",
+    "checks",
+    "recommended",
+    "claim",
+    "kind",
+    "crosses"
+   ],
+   "nodes": [
+    [
+     "N1",
+     "Audit the current pages",
+     "done",
+     "done",
+     [],
+     0,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "content"
+    ],
+    [
+     "N2",
+     "Draft the new navigation",
+     "done",
+     "done",
+     [
+      "N1"
+     ],
+     1,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "content",
+     null,
+     null,
+     null,
+     null,
+     {
+      "N1": "the page audit"
+     }
+    ],
+    [
+     "N3",
+     "You approve the navigation",
+     "done",
+     "done",
+     [
+      "N2"
+     ],
+     2,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "content",
+     null,
+     null,
+     null,
+     "gate",
+     {
+      "N2": "the proposed navigation"
+     }
+    ],
+    [
+     "N4",
+     "Move pages to the new structure",
+     "done",
+     "done",
+     [
+      "N3"
+     ],
+     3,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "content",
+     null,
+     null,
+     null,
+     "code",
+     {
+      "N3": "the approved navigation"
+     }
+    ],
+    [
+     "N5",
+     "Set up the search index",
+     "done",
+     "done",
+     [],
+     0,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "search"
+    ],
+    [
+     "N6",
+     "Build the search box",
+     "done",
+     "done",
+     [
+      "N5"
+     ],
+     1,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "search",
+     null,
+     null,
+     null,
+     null,
+     {
+      "N5": "the index format"
+     }
+    ],
+    [
+     "N7",
+     "Search results page",
+     "needs_you",
+     "needs_you",
+     [
+      "N6"
+     ],
+     2,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "search",
+     null,
+     null,
+     null,
+     null,
+     {
+      "N6": "the search box component"
+     }
+    ],
+    [
+     "N8",
+     "Dark theme tokens",
+     "done",
+     "done",
+     [],
+     0,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "design"
+    ],
+    [
+     "N9",
+     "Theme switcher",
+     "ready",
+     "ready",
+     [
+      "N8"
+     ],
+     1,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "design",
+     null,
+     null,
+     null,
+     null,
+     {
+      "N8": "the colour tokens"
+     }
+    ],
+    [
+     "N10",
+     "Code block styling",
+     "running",
+     "running",
+     [
+      "N8"
+     ],
+     1,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "design",
+     null,
+     null,
+     {
+      "by": "Claude Code",
+      "worktree": null,
+      "cwd": "C:\\Users\\alex\\Projects\\docs-site",
+      "environment": "local",
+      "since": "2026-11-05T21:50:52+00:00",
+      "refreshed_at": "2026-11-05T21:50:52+00:00",
+      "stale": false
+     },
+     null,
+     {
+      "N8": "the colour tokens"
+     }
+    ],
+    [
+     "N11",
+     "Versioned docs",
+     "running",
+     "running",
+     [
+      "N4"
+     ],
+     4,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "launch",
+     null,
+     null,
+     {
+      "by": "Codex",
+      "worktree": null,
+      "cwd": "C:\\Users\\alex\\Projects\\docs-site",
+      "environment": "local",
+      "since": "2026-11-05T21:50:52+00:00",
+      "refreshed_at": "2026-11-05T21:50:52+00:00",
+      "stale": false
+     },
+     "code",
+     {
+      "N4": "the moved pages"
+     }
+    ],
+    [
+     "N12",
+     "Link check",
+     "error",
+     "error",
+     [
+      "N4"
+     ],
+     4,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "launch",
+     null,
+     null,
+     null,
+     "code",
+     {
+      "N4": "the redirect map"
+     }
+    ],
+    [
+     "N13",
+     "Launch checklist",
+     "not_started",
+     "not_started",
+     [
+      "N9",
+      "N10",
+      "N11",
+      "N12",
+      "N7"
+     ],
+     5,
+     null,
+     null,
+     null,
+     0,
+     null,
+     "launch",
+     null,
+     null,
+     null,
+     null,
+     {
+      "N9": "the theme switch",
+      "N10": "the code blocks",
+      "N11": "the versioned build",
+      "N12": "a clean link report",
+      "N7": "the search page"
+     }
+    ],
+    [
+     "N14",
+     "You sign off the launch",
+     "not_started",
+     "not_started",
+     [
+      "N13"
+     ],
+     6,
+     null,
+     null,
+     null,
+     0,
+     null,
+     "launch",
+     null,
+     null,
+     null,
+     "gate",
+     {
+      "N13": "the launch checklist"
+     }
+    ]
+   ],
+   "edges": [
+    [
+     "N1",
+     "N2"
+    ],
+    [
+     "N2",
+     "N3"
+    ],
+    [
+     "N3",
+     "N4"
+    ],
+    [
+     "N5",
+     "N6"
+    ],
+    [
+     "N6",
+     "N7"
+    ],
+    [
+     "N8",
+     "N9"
+    ],
+    [
+     "N8",
+     "N10"
+    ],
+    [
+     "N4",
+     "N11"
+    ],
+    [
+     "N4",
+     "N12"
+    ],
+    [
+     "N9",
+     "N13"
+    ],
+    [
+     "N10",
+     "N13"
+    ],
+    [
+     "N11",
+     "N13"
+    ],
+    [
+     "N12",
+     "N13"
+    ],
+    [
+     "N7",
+     "N13"
+    ],
+    [
+     "N13",
+     "N14"
+    ]
+   ],
+   "counts": {
+    "not_started": 2,
+    "ready": 1,
+    "running": 2,
+    "submitted": 0,
+    "done": 7,
+    "error": 1,
+    "needs_you": 1,
+    "skipped": 0,
+    "carried": 0,
+    "total": 14
+   },
+   "integrity_ok": true,
+   "integrity": []
+  },
+  "/api/constraints?project=docs-site-v2": {
+   "project": "docs-site-v2",
+   "constraints": [
+    {
+     "project": "docs-site-v2",
+     "node": "N8",
+     "accepted": "N8 Dark theme tokens: Define light and dark colour tokens in src/styles/tokens.css that pass WCAG AA for body text and links.",
+     "derived": "keep 'prefers-color-scheme: dark' in src/styles/tokens.css",
+     "lands_in": "src/styles/tokens.css",
+     "line": "ACCEPTED: N8 Dark theme tokens: Define light and dark colour tokens in src/styles/tokens.css that pass WCAG AA for body text and links. / DERIVED: keep 'prefers-color-scheme: dark' in src/styles/tokens.css / LANDS IN: src/styles/tokens.css",
+     "source": "template",
+     "at": "2026-11-05T21:51:10+00:00"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N6",
+     "accepted": "N6 Build the search box: Add a search box to the header that opens results as you type, keyboard first (slash to focus, arrows to move, Enter to open).",
+     "derived": "keep 'aria-activedescendant' in src/components/SearchBox.tsx",
+     "lands_in": "src/components/SearchBox.tsx",
+     "line": "ACCEPTED: N6 Build the search box: Add a search box to the header that opens results as you type, keyboard first (slash to focus, arrows to move, Enter to open). / DERIVED: keep 'aria-activedescendant' in src/components/SearchBox.tsx / LANDS IN: src/components/SearchBox.tsx",
+     "source": "template",
+     "at": "2026-11-05T21:51:10+00:00"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N5",
+     "accepted": "N5 Set up the search index: Add a build step that writes a full-text index of every page to public/search-index.json, with titles weighted above body text.",
+     "derived": "keep public/search-index.json in place",
+     "lands_in": "public/search-index.json",
+     "line": "ACCEPTED: N5 Set up the search index: Add a build step that writes a full-text index of every page to public/search-index.json, with titles weighted above body text. / DERIVED: keep public/search-index.json in place / LANDS IN: public/search-index.json",
+     "source": "template",
+     "at": "2026-11-05T21:51:10+00:00"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N4",
+     "accepted": "N4 Move pages to the new structure: Move each page to its new section with a redirect from the old URL; write the redirect map to deploy/redirects.json.",
+     "derived": "keep `npm run docs:redirects -- --verify` passing",
+     "lands_in": "lane content of docs-site-v2",
+     "line": "ACCEPTED: N4 Move pages to the new structure: Move each page to its new section with a redirect from the old URL; write the redirect map to deploy/redirects.json. / DERIVED: keep `npm run docs:redirects -- --verify` passing / LANDS IN: lane content of docs-site-v2",
+     "source": "template",
+     "at": "2026-11-05T21:51:10+00:00"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N3",
+     "accepted": "N3 You approve the navigation: Read the proposed navigation and approve it or ask for changes.",
+     "derived": "Alex approved \"The navigation in content/nav.yml is approved\"; a change here needs his eye again",
+     "lands_in": "lane content of docs-site-v2",
+     "line": "ACCEPTED: N3 You approve the navigation: Read the proposed navigation and approve it or ask for changes. / DERIVED: Alex approved \"The navigation in content/nav.yml is approved\"; a change here needs his eye again / LANDS IN: lane content of docs-site-v2",
+     "source": "template",
+     "at": "2026-11-05T21:51:10+00:00"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N2",
+     "accepted": "N2 Draft the new navigation: Propose a new sidebar of at most seven top-level sections in content/nav.yml, using the audit to merge or drop thin pages.",
+     "derived": "keep 'sections:' in content/nav.yml",
+     "lands_in": "content/nav.yml",
+     "line": "ACCEPTED: N2 Draft the new navigation: Propose a new sidebar of at most seven top-level sections in content/nav.yml, using the audit to merge or drop thin pages. / DERIVED: keep 'sections:' in content/nav.yml / LANDS IN: content/nav.yml",
+     "source": "template",
+     "at": "2026-11-05T21:51:10+00:00"
+    },
+    {
+     "project": "docs-site-v2",
+     "node": "N1",
+     "accepted": "N1 Audit the current pages: List every page of v1 with its word count, last edit and monthly visits into content/audit.csv, and flag pages with no visits in 90…",
+     "derived": "keep content/audit.csv in place",
+     "lands_in": "content/audit.csv",
+     "line": "ACCEPTED: N1 Audit the current pages: List every page of v1 with its word count, last edit and monthly visits into content/audit.csv, and flag pages with no visits in 90… / DERIVED: keep content/audit.csv in place / LANDS IN: content/audit.csv",
+     "source": "template",
+     "at": "2026-11-05T21:51:10+00:00"
+    }
+   ]
+  },
+  "/api/events?project=docs-site-v2&since=0&auto=1": {
+   "events": [
+    {
+     "seq": 7,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": null,
+     "kind": "import",
+     "actor": "owner",
+     "summary": "Imported the plan 'Docs site v2' with 14 tasks.",
+     "data": {
+      "nodes": 14,
+      "reset": [],
+      "draft": false,
+      "revision": 7
+     }
+    },
+    {
+     "seq": 8,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N1",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N1 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 8
+     }
+    },
+    {
+     "seq": 9,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N2",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N2 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 9
+     }
+    },
+    {
+     "seq": 10,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N3",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N3 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 10
+     }
+    },
+    {
+     "seq": 11,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N4",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N4 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 11
+     }
+    },
+    {
+     "seq": 12,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N5",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N5 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 12
+     }
+    },
+    {
+     "seq": 13,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N6",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N6 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 13
+     }
+    },
+    {
+     "seq": 14,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N8",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N8 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 14
+     }
+    },
+    {
+     "seq": 15,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N10",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N10 is now running.",
+     "data": {
+      "status": "running",
+      "revision": 15
+     }
+    },
+    {
+     "seq": 16,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N11",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N11 is now running.",
+     "data": {
+      "status": "running",
+      "revision": 16
+     }
+    },
+    {
+     "seq": 17,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N9",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N9 is now ready.",
+     "data": {
+      "status": "ready",
+      "revision": 17
+     }
+    },
+    {
+     "seq": 18,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N7",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N7 is now needs you.",
+     "data": {
+      "status": "needs_you",
+      "revision": 18
+     }
+    },
+    {
+     "seq": 19,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N12",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N12 is now error.",
+     "data": {
+      "status": "error",
+      "revision": 19
+     }
+    },
+    {
+     "seq": 20,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N7",
+     "kind": "question",
+     "actor": "engine",
+     "summary": "A question is waiting for Alex: The search results page is built. Open it on a phone and say whether the highlighted sentences read well.",
+     "data": {
+      "question": "q-6d1232648b"
+     }
+    },
+    {
+     "seq": 24,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": null,
+     "kind": "version",
+     "actor": "owner",
+     "summary": "Alex grouped docs-site-v1, docs-site-v2 as versions 1 to 2 of 'Docs site'; docs-site-v2 is the current version.",
+     "data": {
+      "family": "docs-site",
+      "members": [
+       "docs-site-v1",
+       "docs-site-v2"
+      ],
+      "revision": 23
+     }
+    }
+   ]
+  },
+  "/api/history?project=docs-site-v2": {
+   "family": {
+    "id": "docs-site",
+    "title": "Docs site"
+   },
+   "current": "docs-site-v2",
+   "versions": [
+    {
+     "project": "docs-site-v1",
+     "title": "Docs site v1",
+     "version": 1,
+     "archived": true,
+     "status": "active",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "counts": {
+      "done": 5,
+      "open": 0,
+      "skipped": 0,
+      "carried": 0
+     }
+    },
+    {
+     "project": "docs-site-v2",
+     "title": "Docs site v2",
+     "version": 2,
+     "archived": false,
+     "status": "active",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "counts": {
+      "done": 7,
+      "open": 7,
+      "skipped": 0,
+      "carried": 0
+     }
+    }
+   ],
+   "skipped": []
+  },
+  "/api/node?project=docs-site-v2&id=N1": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N1",
+    "title": "Audit the current pages",
+    "goal": "List every page of v1 with its word count, last edit and monthly visits into content/audit.csv, and flag pages with no visits in 90 days.",
+    "goal_hash": "237d7ccc92bde036059ffd33fecc437720d612b6e745ce2b115bd9d89cc3e187",
+    "check_hash": "908658cbedbcc510768c19d12ba10eaeaf7fe13de7f68b5da8918a3f9ab8920f",
+    "owner": "lead",
+    "lane": "content",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "files_exist",
+     "paths": [
+      "content/audit.csv"
+     ]
+    },
+    "deps": [],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 8,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N1",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N1 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 8
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N1": {
+   "project": "docs-site-v2",
+   "node": "N1",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N1": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N2": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N2",
+    "title": "Draft the new navigation",
+    "goal": "Propose a new sidebar of at most seven top-level sections in content/nav.yml, using the audit to merge or drop thin pages.",
+    "goal_hash": "bc9be556ae2dd483ba4741441a08910f9494fb559421c804440108c3cd55eb7c",
+    "check_hash": "94d16075ba88ad7ef5f8718eaa31808b6c9b9484529c141850aca5841658c589",
+    "owner": "lead",
+    "lane": "content",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "text_present",
+     "path": "content/nav.yml",
+     "text": "sections:"
+    },
+    "deps": [
+     "N1"
+    ],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 9,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N2",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N2 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 9
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N1",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N2": {
+   "project": "docs-site-v2",
+   "node": "N2",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N1",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N2": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N3": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N3",
+    "title": "You approve the navigation",
+    "goal": "Read the proposed navigation and approve it or ask for changes.",
+    "goal_hash": "dd99d80c01ddabaf1273db1f0d2d249618a4b26e1b6511d77bcf28e934e10103",
+    "check_hash": "b1855a4a04e1f6a9aa9f503fb4afd5bc199a4913aba44bd5d33af77e09ba76d3",
+    "owner": "lead",
+    "lane": "content",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "human",
+     "prompt": "The navigation in content/nav.yml is approved"
+    },
+    "deps": [
+     "N2"
+    ],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 10,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N3",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N3 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 10
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N2",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N3": {
+   "project": "docs-site-v2",
+   "node": "N3",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N2",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N3": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N4": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N4",
+    "title": "Move pages to the new structure",
+    "goal": "Move each page to its new section with a redirect from the old URL; write the redirect map to deploy/redirects.json.",
+    "goal_hash": "443cb0ff54a9fa7235a7efefd6b23e292800d2b913054c1b4b05d1b5caa43ea4",
+    "check_hash": "3c71d4c1a0ed5ee2d56cad71f8e71efb56096d08b5e6e0bfa440496cfb99211c",
+    "owner": "lead",
+    "lane": "content",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "command",
+     "run": "npm run docs:redirects -- --verify"
+    },
+    "deps": [
+     "N3"
+    ],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 11,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N4",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N4 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 11
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N3",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N4": {
+   "project": "docs-site-v2",
+   "node": "N4",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N3",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N4": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N5": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N5",
+    "title": "Set up the search index",
+    "goal": "Add a build step that writes a full-text index of every page to public/search-index.json, with titles weighted above body text.",
+    "goal_hash": "e48fd17322b21df0460dcfe28c1b9ab0c0c01b37892eee28316795c068747e56",
+    "check_hash": "30922067b3fae6aba3eb2cafb4902d90fd7eb56bee90a6124fad9b6b4f16c067",
+    "owner": "lead",
+    "lane": "search",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "files_exist",
+     "paths": [
+      "public/search-index.json"
+     ]
+    },
+    "deps": [],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 12,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N5",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N5 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 12
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N5": {
+   "project": "docs-site-v2",
+   "node": "N5",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N5": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N6": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N6",
+    "title": "Build the search box",
+    "goal": "Add a search box to the header that opens results as you type, keyboard first (slash to focus, arrows to move, Enter to open).",
+    "goal_hash": "987609967658c0c381599b9c085a036dc3166cb2ffdcf4baa0c785ee9fe3a4e5",
+    "check_hash": "fec647df2447fa11e83517cac21871eabc9114356ed2baeec6e99a92f1e1ab2f",
+    "owner": "lead",
+    "lane": "search",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "text_present",
+     "path": "src/components/SearchBox.tsx",
+     "text": "aria-activedescendant"
+    },
+    "deps": [
+     "N5"
+    ],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 13,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N6",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N6 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 13
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N5",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N6": {
+   "project": "docs-site-v2",
+   "node": "N6",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N5",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N6": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N7": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N7",
+    "title": "Search results page",
+    "goal": "Add a /search page that shows ranked results with the matching sentence highlighted and a filter by section.",
+    "goal_hash": "baf5061fc0928fef51424b539716e3d7674b6fbce3878a56506a833645a186c2",
+    "check_hash": "be5ce5d89608d28ff857fbaefe8fd050bf293e33813305303cd60bfdc0431f27",
+    "owner": "lead",
+    "lane": "search",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "needs_you",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "files_exist",
+     "paths": [
+      "src/pages/search.tsx"
+     ]
+    },
+    "deps": [
+     "N6"
+    ],
+    "display_status": "needs_you",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 18,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N7",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N7 is now needs you.",
+     "data": {
+      "status": "needs_you",
+      "revision": 18
+     }
+    },
+    {
+     "seq": 20,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N7",
+     "kind": "question",
+     "actor": "engine",
+     "summary": "A question is waiting for Alex: The search results page is built. Open it on a phone and say whether the highlighted sentences read well.",
+     "data": {
+      "question": "q-6d1232648b"
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N6",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N7": {
+   "project": "docs-site-v2",
+   "node": "N7",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N6",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N7": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N8": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N8",
+    "title": "Dark theme tokens",
+    "goal": "Define light and dark colour tokens in src/styles/tokens.css that pass WCAG AA for body text and links.",
+    "goal_hash": "0b132b2b90c0920500818ef1580fb7ea1c5a394af845d557e4277cdc3a0f244c",
+    "check_hash": "bde13cd7a92f93d7d01841b9bac186aa0ed37fe462f24e40d72052b6078bcad2",
+    "owner": "lead",
+    "lane": "design",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "text_present",
+     "path": "src/styles/tokens.css",
+     "text": "prefers-color-scheme: dark"
+    },
+    "deps": [],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 14,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N8",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N8 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 14
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N8": {
+   "project": "docs-site-v2",
+   "node": "N8",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N8": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N9": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N9",
+    "title": "Theme switcher",
+    "goal": "Add a light / dark / system switch to the header that remembers the choice and never flashes the wrong theme on load.",
+    "goal_hash": "50ceebf6b4b88ed0646b7f3ead619a4c7c625ee72a5cdd450a822d98d0214a83",
+    "check_hash": "074ff065a15095aa1abf06ef1edb9889c370739f2edd078d080fc019d4bed3d2",
+    "owner": "lead",
+    "lane": "design",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "ready",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "text_present",
+     "path": "src/components/ThemeSwitch.tsx",
+     "text": "system"
+    },
+    "deps": [
+     "N8"
+    ],
+    "display_status": "ready",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 17,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N9",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N9 is now ready.",
+     "data": {
+      "status": "ready",
+      "revision": 17
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N8",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N9": {
+   "project": "docs-site-v2",
+   "node": "N9",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N8",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N9": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N10": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N10",
+    "title": "Code block styling",
+    "goal": "Restyle code blocks for both themes with a copy button and line highlighting.",
+    "goal_hash": "dc57d1fc21381459d15834f9b3b719c7f75ebf8b5884a23d0c516c3930390490",
+    "check_hash": "f6b347c687793ea7a2f322f99b1dad3e1d0f2909387649f11542191bd01607d9",
+    "owner": "lead",
+    "lane": "design",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "running",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "text_present",
+     "path": "src/components/CodeBlock.tsx",
+     "text": "Copy"
+    },
+    "deps": [
+     "N8"
+    ],
+    "display_status": "running",
+    "checks": null,
+    "claim": {
+     "by": "Claude Code",
+     "worktree": null,
+     "cwd": "C:\\Users\\alex\\Projects\\docs-site",
+     "environment": "local",
+     "since": "2026-11-05T21:50:52+00:00",
+     "refreshed_at": "2026-11-05T21:50:52+00:00",
+     "stale": false
+    }
+   },
+   "events": [
+    {
+     "seq": 15,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N10",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N10 is now running.",
+     "data": {
+      "status": "running",
+      "revision": 15
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N8",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "started",
+     "text": "Started by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N10": {
+   "project": "docs-site-v2",
+   "node": "N10",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N8",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "started",
+     "text": "Started by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N10": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N11": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N11",
+    "title": "Versioned docs",
+    "goal": "Publish v1 docs under /v1/ and the new docs at the root, with a version picker in the header.",
+    "goal_hash": "7069f658633b176aaea946e94c12d843129e5039085ffe6f9384706389cff377",
+    "check_hash": "c13a083868a3195678be84cd16e938a6db83cdd350eaa442edd408d5aeed5948",
+    "owner": "lead",
+    "lane": "launch",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "running",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "command",
+     "run": "npm run build && npm run docs:versions -- --check"
+    },
+    "deps": [
+     "N4"
+    ],
+    "display_status": "running",
+    "checks": null,
+    "claim": {
+     "by": "Codex",
+     "worktree": null,
+     "cwd": "C:\\Users\\alex\\Projects\\docs-site",
+     "environment": "local",
+     "since": "2026-11-05T21:50:52+00:00",
+     "refreshed_at": "2026-11-05T21:50:52+00:00",
+     "stale": false
+    }
+   },
+   "events": [
+    {
+     "seq": 16,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N11",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N11 is now running.",
+     "data": {
+      "status": "running",
+      "revision": 16
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N4",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "started",
+     "text": "Started by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N11": {
+   "project": "docs-site-v2",
+   "node": "N11",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N4",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "started",
+     "text": "Started by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N11": {
+   "model": "agent:chatmode",
+   "effort": "low",
+   "why": "Strongest working model for a easy task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N12": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N12",
+    "title": "Link check",
+    "goal": "Run the link checker over the built site; no broken internal links and no redirect chains longer than one hop.",
+    "goal_hash": "50fd98de420703c959f74cbadfdcf65283be9c1d8e69714ff1f7545bb3bc740a",
+    "check_hash": "208f37a873df861c560055b89038a88205fbe25c7181751de5990cf76d16c76b",
+    "owner": "lead",
+    "lane": "launch",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "error",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": "npm run linkcheck exited 1: 3 broken internal links (/guides/deploy#preview, /reference/cli#flags, /faq#billing).",
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "command",
+     "run": "npm run linkcheck"
+    },
+    "deps": [
+     "N4"
+    ],
+    "display_status": "error",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 19,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "docs-site-v2",
+     "node_id": "N12",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task N12 is now error.",
+     "data": {
+      "status": "error",
+      "revision": 19
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N4",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "failed",
+     "text": "Is now error.",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=docs-site-v2&id=N12": {
+   "project": "docs-site-v2",
+   "node": "N12",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: N4",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "failed",
+     "text": "Is now error.",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N12": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N13": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N13",
+    "title": "Launch checklist",
+    "goal": "Write deploy/launch.md: analytics, sitemap, robots, redirects, search smoke test and a rollback step.",
+    "goal_hash": "62b807e286cf36ae9769fa9d488eea84009dea43fafc153cf89584160c86f7d7",
+    "check_hash": "7221dd29525a4ac13c3700195cc5771eff9b539e370f70c8b342573d6827247c",
+    "owner": "lead",
+    "lane": "launch",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "not_started",
+    "attempts": 0,
+    "actor": null,
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "text_present",
+     "path": "deploy/launch.md",
+     "text": "Rollback"
+    },
+    "deps": [
+     "N9",
+     "N10",
+     "N11",
+     "N12",
+     "N7"
+    ],
+    "display_status": "not_started",
+    "checks": null,
+    "claim": null
+   },
+   "events": [],
+   "revision": 23,
+   "history": []
+  },
+  "/api/node/history?project=docs-site-v2&id=N13": {
+   "project": "docs-site-v2",
+   "node": "N13",
+   "history": []
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N13": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=docs-site-v2&id=N14": {
+   "node": {
+    "project_id": "docs-site-v2",
+    "id": "N14",
+    "title": "You sign off the launch",
+    "goal": "Walk through the launch checklist on the preview host and say whether v2 can go live.",
+    "goal_hash": "44d2486e158bdbbcd45808f0221773f3a1238432ba9adb6750c8fd5410ccd202",
+    "check_hash": "ef8dfb34f5b2f61eacc61d7cef8abfcbab3285351d795590127f95956e9e648f",
+    "owner": "lead",
+    "lane": "launch",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "not_started",
+    "attempts": 0,
+    "actor": null,
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "human",
+     "prompt": "I walked the launch checklist and v2 can go live"
+    },
+    "deps": [
+     "N13"
+    ],
+    "display_status": "not_started",
+    "checks": null,
+    "claim": null
+   },
+   "events": [],
+   "revision": 23,
+   "history": []
+  },
+  "/api/node/history?project=docs-site-v2&id=N14": {
+   "project": "docs-site-v2",
+   "node": "N14",
+   "history": []
+  },
+  "/api/pick?kind=task&project=docs-site-v2&id=N14": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/board?project=onboarding-emails": {
+   "project": {
+    "id": "onboarding-emails",
+    "title": "Onboarding email series",
+    "cwd": "C:\\Users\\alex\\Projects\\onboarding-emails",
+    "family": null,
+    "family_title": null,
+    "version": null,
+    "status": "active",
+    "draft": false,
+    "archived": false
+   },
+   "revision": 23,
+   "fields": [
+    "id",
+    "title",
+    "status",
+    "display_status",
+    "deps",
+    "wave",
+    "pool",
+    "model",
+    "effort",
+    "attempts",
+    "actor",
+    "lane",
+    "checks",
+    "recommended",
+    "claim",
+    "kind",
+    "crosses"
+   ],
+   "nodes": [
+    [
+     "E1",
+     "Outline the five emails",
+     "done",
+     "done",
+     [],
+     0,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "copy"
+    ],
+    [
+     "E2",
+     "Draft the copy",
+     "running",
+     "running",
+     [
+      "E1"
+     ],
+     1,
+     null,
+     null,
+     null,
+     0,
+     "owner",
+     "copy",
+     null,
+     null,
+     {
+      "by": "Gemini",
+      "worktree": null,
+      "cwd": "C:\\Users\\alex\\Projects\\onboarding-emails",
+      "environment": "local",
+      "since": "2026-11-05T21:50:52+00:00",
+      "refreshed_at": "2026-11-05T21:50:52+00:00",
+      "stale": false
+     },
+     null,
+     {
+      "E1": "the outline"
+     }
+    ],
+    [
+     "E3",
+     "Build the templates",
+     "not_started",
+     "not_started",
+     [
+      "E2"
+     ],
+     2,
+     null,
+     null,
+     null,
+     0,
+     null,
+     "build",
+     null,
+     null,
+     null,
+     "code",
+     {
+      "E2": "the final copy"
+     }
+    ],
+    [
+     "E4",
+     "Set up the send schedule",
+     "not_started",
+     "not_started",
+     [
+      "E3"
+     ],
+     3,
+     null,
+     null,
+     null,
+     0,
+     null,
+     "build",
+     null,
+     null,
+     null,
+     "code",
+     {
+      "E3": "the templates"
+     }
+    ],
+    [
+     "E5",
+     "You approve the series",
+     "not_started",
+     "not_started",
+     [
+      "E4"
+     ],
+     4,
+     null,
+     null,
+     null,
+     0,
+     null,
+     "copy",
+     null,
+     null,
+     null,
+     "gate",
+     {
+      "E4": "the dry-run report"
+     }
+    ]
+   ],
+   "edges": [
+    [
+     "E1",
+     "E2"
+    ],
+    [
+     "E2",
+     "E3"
+    ],
+    [
+     "E3",
+     "E4"
+    ],
+    [
+     "E4",
+     "E5"
+    ]
+   ],
+   "counts": {
+    "not_started": 3,
+    "ready": 0,
+    "running": 1,
+    "submitted": 0,
+    "done": 1,
+    "error": 0,
+    "needs_you": 0,
+    "skipped": 0,
+    "carried": 0,
+    "total": 5
+   },
+   "integrity_ok": true,
+   "integrity": []
+  },
+  "/api/constraints?project=onboarding-emails": {
+   "project": "onboarding-emails",
+   "constraints": [
+    {
+     "project": "onboarding-emails",
+     "node": "E1",
+     "accepted": "E1 Outline the five emails: Write emails/outline.md with one line per email: day, subject idea and the single action it asks for.",
+     "derived": "keep emails/outline.md in place",
+     "lands_in": "emails/outline.md",
+     "line": "ACCEPTED: E1 Outline the five emails: Write emails/outline.md with one line per email: day, subject idea and the single action it asks for. / DERIVED: keep emails/outline.md in place / LANDS IN: emails/outline.md",
+     "source": "template",
+     "at": "2026-11-05T21:51:13+00:00"
+    }
+   ]
+  },
+  "/api/events?project=onboarding-emails&since=0&auto=1": {
+   "events": [
+    {
+     "seq": 21,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "onboarding-emails",
+     "node_id": null,
+     "kind": "import",
+     "actor": "owner",
+     "summary": "Imported the plan 'Onboarding email series' with 5 tasks.",
+     "data": {
+      "nodes": 5,
+      "reset": [],
+      "draft": false,
+      "revision": 20
+     }
+    },
+    {
+     "seq": 22,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "onboarding-emails",
+     "node_id": "E1",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task E1 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 21
+     }
+    },
+    {
+     "seq": 23,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "onboarding-emails",
+     "node_id": "E2",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task E2 is now running.",
+     "data": {
+      "status": "running",
+      "revision": 22
+     }
+    }
+   ]
+  },
+  "/api/history?project=onboarding-emails": {
+   "family": {
+    "id": null,
+    "title": "Onboarding email series"
+   },
+   "current": "onboarding-emails",
+   "versions": [
+    {
+     "project": "onboarding-emails",
+     "title": "Onboarding email series",
+     "version": 1,
+     "archived": false,
+     "status": "active",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "counts": {
+      "done": 1,
+      "open": 4,
+      "skipped": 0,
+      "carried": 0
+     }
+    }
+   ],
+   "skipped": []
+  },
+  "/api/node?project=onboarding-emails&id=E1": {
+   "node": {
+    "project_id": "onboarding-emails",
+    "id": "E1",
+    "title": "Outline the five emails",
+    "goal": "Write emails/outline.md with one line per email: day, subject idea and the single action it asks for.",
+    "goal_hash": "7671edd3bddd15a5c737c948506b5437f6a2ef304b65603d8dd40e017bed2934",
+    "check_hash": "29fce07d71259b8829ad15ed0d870ae91ac7e83ce642b818e35067f2cdb72b75",
+    "owner": "lead",
+    "lane": "copy",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "done",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "files_exist",
+     "paths": [
+      "emails/outline.md"
+     ]
+    },
+    "deps": [],
+    "display_status": "done",
+    "checks": null,
+    "claim": null
+   },
+   "events": [
+    {
+     "seq": 22,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "onboarding-emails",
+     "node_id": "E1",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task E1 is now done.",
+     "data": {
+      "status": "done",
+      "revision": 21
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=onboarding-emails&id=E1": {
+   "project": "onboarding-emails",
+   "node": "E1",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "completed",
+     "text": "Marked done by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=onboarding-emails&id=E1": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=onboarding-emails&id=E2": {
+   "node": {
+    "project_id": "onboarding-emails",
+    "id": "E2",
+    "title": "Draft the copy",
+    "goal": "Draft all five emails in emails/drafts/, under 120 words each, every one ending with one button.",
+    "goal_hash": "5fdde25b84c5c9ce0aecb70a0dc45c982fb1d75eb97741e8be826ded38df10ad",
+    "check_hash": "47149654de0f976be7288498a330ce32749dc2170506877f725386ec97f93f8a",
+    "owner": "lead",
+    "lane": "copy",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "running",
+    "attempts": 0,
+    "actor": "owner",
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "files_exist",
+     "paths": [
+      "emails/drafts/day1.md",
+      "emails/drafts/day5.md"
+     ]
+    },
+    "deps": [
+     "E1"
+    ],
+    "display_status": "running",
+    "checks": null,
+    "claim": {
+     "by": "Gemini",
+     "worktree": null,
+     "cwd": "C:\\Users\\alex\\Projects\\onboarding-emails",
+     "environment": "local",
+     "since": "2026-11-05T21:50:52+00:00",
+     "refreshed_at": "2026-11-05T21:50:52+00:00",
+     "stale": false
+    }
+   },
+   "events": [
+    {
+     "seq": 23,
+     "at": "2026-11-05T21:50:52+00:00",
+     "project_id": "onboarding-emails",
+     "node_id": "E2",
+     "kind": "status",
+     "actor": "owner",
+     "summary": "Task E2 is now running.",
+     "data": {
+      "status": "running",
+      "revision": 22
+     }
+    }
+   ],
+   "revision": 23,
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: E1",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "started",
+     "text": "Started by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/node/history?project=onboarding-emails&id=E2": {
+   "project": "onboarding-emails",
+   "node": "E2",
+   "history": [
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "prereqs_met",
+     "text": "Prerequisites done: E1",
+     "by": "Alex"
+    },
+    {
+     "at": "2026-11-05T21:50:52+00:00",
+     "kind": "started",
+     "text": "Started by Alex",
+     "by": "Alex"
+    }
+   ]
+  },
+  "/api/pick?kind=task&project=onboarding-emails&id=E2": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=onboarding-emails&id=E3": {
+   "node": {
+    "project_id": "onboarding-emails",
+    "id": "E3",
+    "title": "Build the templates",
+    "goal": "Render the drafts into responsive HTML templates and check they pass the email linter.",
+    "goal_hash": "83b37c4537e9eb5af0b7ce8fad4e5d5f212a33f21589bb02665e790985cc6513",
+    "check_hash": "4dfebfb84f8838d999960857554545a8f8193e1b88cae8bbf21a74194b126b50",
+    "owner": "lead",
+    "lane": "build",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "not_started",
+    "attempts": 0,
+    "actor": null,
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "command",
+     "run": "npm run emails:lint"
+    },
+    "deps": [
+     "E2"
+    ],
+    "display_status": "not_started",
+    "checks": null,
+    "claim": null
+   },
+   "events": [],
+   "revision": 23,
+   "history": []
+  },
+  "/api/node/history?project=onboarding-emails&id=E3": {
+   "project": "onboarding-emails",
+   "node": "E3",
+   "history": []
+  },
+  "/api/pick?kind=task&project=onboarding-emails&id=E3": {
+   "model": "agent:chatmode",
+   "effort": "low",
+   "why": "Strongest working model for a easy task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=onboarding-emails&id=E4": {
+   "node": {
+    "project_id": "onboarding-emails",
+    "id": "E4",
+    "title": "Set up the send schedule",
+    "goal": "Configure the day 0-4 schedule in the mail tool's config file and dry-run it against a test list.",
+    "goal_hash": "cd15b920defe6f0084ef2aff6418d2eb2b58db60a7c6b76241ee8ddc0661dde7",
+    "check_hash": "e7117e49eed461b3f55ad15ee700c4be4eac6005b342afcf51ed3f12db37dcea",
+    "owner": "lead",
+    "lane": "build",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "not_started",
+    "attempts": 0,
+    "actor": null,
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "text_present",
+     "path": "emails/schedule.yml",
+     "text": "dry_run: passed"
+    },
+    "deps": [
+     "E3"
+    ],
+    "display_status": "not_started",
+    "checks": null,
+    "claim": null
+   },
+   "events": [],
+   "revision": 23,
+   "history": []
+  },
+  "/api/node/history?project=onboarding-emails&id=E4": {
+   "project": "onboarding-emails",
+   "node": "E4",
+   "history": []
+  },
+  "/api/pick?kind=task&project=onboarding-emails&id=E4": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/node?project=onboarding-emails&id=E5": {
+   "node": {
+    "project_id": "onboarding-emails",
+    "id": "E5",
+    "title": "You approve the series",
+    "goal": "Read the five emails as a trial user would and approve the series.",
+    "goal_hash": "643a402f8cd29e72961dad635819362c78ce7be1420e131e2acc89b3ae2e516b",
+    "check_hash": "da99636099abef1cc8b974b1f3f96977a97d8e27fa77454211744ec62c1ecf8d",
+    "owner": "lead",
+    "lane": "copy",
+    "pool": null,
+    "model": null,
+    "effort": null,
+    "status": "not_started",
+    "attempts": 0,
+    "actor": null,
+    "evidence": null,
+    "updated_at": "2026-11-05T21:50:52+00:00",
+    "recommended": null,
+    "check": {
+     "type": "human",
+     "prompt": "I read all five emails and the series is approved"
+    },
+    "deps": [
+     "E4"
+    ],
+    "display_status": "not_started",
+    "checks": null,
+    "claim": null
+   },
+   "events": [],
+   "revision": 23,
+   "history": []
+  },
+  "/api/node/history?project=onboarding-emails&id=E5": {
+   "project": "onboarding-emails",
+   "node": "E5",
+   "history": []
+  },
+  "/api/pick?kind=task&project=onboarding-emails&id=E5": {
+   "model": "agent:chatmode",
+   "effort": "medium",
+   "why": "Strongest working model for a normal task of 4 (free).",
+   "label": "ChatMode",
+   "route": "chatmode",
+   "dsh": null
+  },
+  "/api/history?family=docs-site": {
+   "family": {
+    "id": "docs-site",
+    "title": "Docs site"
+   },
+   "current": "docs-site-v2",
+   "versions": [
+    {
+     "project": "docs-site-v1",
+     "title": "Docs site v1",
+     "version": 1,
+     "archived": true,
+     "status": "active",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "counts": {
+      "done": 5,
+      "open": 0,
+      "skipped": 0,
+      "carried": 0
+     }
+    },
+    {
+     "project": "docs-site-v2",
+     "title": "Docs site v2",
+     "version": 2,
+     "archived": false,
+     "status": "active",
+     "created_at": "2026-11-05T21:50:52+00:00",
+     "counts": {
+      "done": 7,
+      "open": 7,
+      "skipped": 0,
+      "carried": 0
+     }
+    }
+   ],
+   "skipped": []
+  },
+  "/api/agents/sessions?agent=claude_code": {
+   "sessions": []
+  },
+  "/api/subagent_chats?agent=claude_code": {
+   "chats": []
+  },
+  "/api/agents/sessions?agent=codex": {
+   "sessions": []
+  },
+  "/api/subagent_chats?agent=codex": {
+   "chats": []
+  },
+  "/api/agents/sessions?agent=chatmode": {
+   "sessions": []
+  },
+  "/api/subagent_chats?agent=chatmode": {
+   "chats": []
+  },
+  "/api/agents/sessions?agent=freebuff": {
+   "sessions": []
+  },
+  "/api/subagent_chats?agent=freebuff": {
+   "chats": []
+  },
+  "/api/agents/sessions?agent=antigravity": {
+   "sessions": []
+  },
+  "/api/subagent_chats?agent=antigravity": {
+   "chats": []
+  }
+ },
+ "status": {}
+}

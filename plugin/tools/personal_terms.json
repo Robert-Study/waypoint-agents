@@ -1,0 +1,42 @@
+{
+  "_comment": "The plugin's loaders (tools/personal_terms.py, tests/personal_terms.mjs) need one entry per kind. The public tree ships placeholders that match nothing real: scripts/export_core.py --scan is its guard.",
+  "terms": [
+    {
+      "kind": "owner-first-name",
+      "b64": "cGxhY2Vob2xkZXItb3duZXItZmlyc3QtbmFtZQ=="
+    },
+    {
+      "kind": "owner-last-name",
+      "b64": "cGxhY2Vob2xkZXItb3duZXItbGFzdC1uYW1l"
+    },
+    {
+      "kind": "account",
+      "b64": "cGxhY2Vob2xkZXItYWNjb3VudA=="
+    },
+    {
+      "kind": "home-path",
+      "b64": "cGxhY2Vob2xkZXItaG9tZS1wYXRo"
+    },
+    {
+      "kind": "notes-drive",
+      "b64": "cGxhY2Vob2xkZXItbm90ZXMtZHJpdmU="
+    },
+    {
+      "kind": "notes-hub",
+      "b64": "cGxhY2Vob2xkZXItbm90ZXMtaHVi"
+    },
+    {
+      "kind": "workspace",
+      "b64": "cGxhY2Vob2xkZXItd29ya3NwYWNl"
+    },
+    {
+      "kind": "repo",
+      "b64": "cGxhY2Vob2xkZXItcmVwbw=="
+    },
+    {
+      "kind": "employer",
+      "b64": "cGxhY2Vob2xkZXItZW1wbG95ZXI="
+    }
+  ],
+  "allowed": []
+}

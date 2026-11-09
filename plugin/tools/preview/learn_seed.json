@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "title": "Git basics",
+  "note": "Neutral learning topic for the preview harness: Git concepts with prerequisites, practice questions and model answers. No roles, employers or personal stories.",
+  "sources": [],
+  "roles": [],
+  "competencies": [
+    {"id": "repo", "title": "What a repository is", "group": "foundations", "prereqs": [], "evidence": [],
+     "explain": "A repository is a folder whose full history Git keeps in a hidden .git folder. Every saved state of the files is a commit, and the history is the chain of commits back to the first one."},
+    {"id": "commit", "title": "Stage and commit changes", "group": "foundations", "prereqs": ["repo"], "evidence": [],
+     "explain": "Git records changes in two steps: git add puts chosen changes in the staging area, and git commit saves exactly what is staged with a message. Small commits with clear messages make history easy to read and undo."},
+    {"id": "branch", "title": "Work on a branch", "group": "branching", "prereqs": ["commit"], "evidence": [],
+     "explain": "A branch is a movable name that points at a commit. New commits move the current branch forward, so you can try an idea on its own branch without touching main."},
+    {"id": "merge", "title": "Merge a branch back", "group": "branching", "prereqs": ["branch"], "evidence": [],
+     "explain": "git merge joins another branch's commits into the current one. When both sides changed the same lines Git stops with a conflict: edit the file to the version you want, add it and commit."},
+    {"id": "remote", "title": "Push and pull with a remote", "group": "collaboration", "prereqs": ["commit"], "evidence": [],
+     "explain": "A remote such as origin is another copy of the repository, usually on a server. git push sends your commits there, git fetch downloads new commits, and git pull fetches and merges them into your branch."},
+    {"id": "undo", "title": "Undo safely", "group": "collaboration", "prereqs": ["merge", "remote"], "evidence": [],
+     "explain": "git restore throws away uncommitted edits to a file, git revert adds a new commit that undoes an old one, and git reset moves a branch. Prefer revert for anything already pushed, because it never rewrites shared history."}
+  ],
+  "stories": [],
+  "questions": [
+    {"id": "q-repo", "text": "What does Git keep inside the .git folder?", "competencies": ["repo"], "stories": [], "roles": [], "weight": 1, "tags": ["core"],
+     "outline": ["Every commit: a snapshot of the files plus its message and parent.", "Branch and tag names that point at commits.", "Settings such as the remotes."]},
+    {"id": "q-commit", "text": "Why does Git have a staging area between editing and committing?", "competencies": ["commit"], "stories": [], "roles": [], "weight": 2, "tags": ["core"],
+     "outline": ["You choose exactly which changes go into the next commit.", "Unrelated edits can wait for their own commit.", "git diff --staged shows what will be saved."]},
+    {"id": "q-branch", "text": "What actually happens when you create a branch?", "competencies": ["branch"], "stories": [], "roles": [], "weight": 2, "tags": ["core"],
+     "outline": ["Git writes a new name pointing at the current commit; nothing is copied.", "HEAD says which branch new commits move.", "Switching branches swaps the files to that commit."]},
+    {"id": "q-merge", "text": "Walk through resolving a merge conflict.", "competencies": ["merge", "branch"], "stories": [], "roles": [], "weight": 2, "tags": ["practice"],
+     "outline": ["git status lists the conflicted files.", "Edit each file between the markers to the version you want.", "git add the files, then git commit to finish the merge."]},
+    {"id": "q-remote", "text": "What is the difference between git fetch and git pull?", "competencies": ["remote"], "stories": [], "roles": [], "weight": 1, "tags": ["core"],
+     "outline": ["fetch downloads new commits and updates origin/* names only.", "pull is fetch followed by a merge (or rebase) into your branch.", "fetch first when you want to look before you merge."]},
+    {"id": "q-undo", "text": "A bad commit is already pushed. How do you undo it?", "competencies": ["undo", "remote"], "stories": [], "roles": [], "weight": 2, "tags": ["practice"],
+     "outline": ["git revert <commit> makes a new commit that undoes it.", "Push the revert like any other commit.", "Avoid reset on shared branches: it rewrites history others already have."]}
+  ]
+}

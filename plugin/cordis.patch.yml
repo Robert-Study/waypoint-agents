@@ -1,0 +1,6 @@
+# Waypoint for dsh (@waypoint/dsh-plugin): one client row. Never patches any other row.
+# `name` must equal package.json "name" (dsh resolves the row by package name).
+# `id` is the cordis entry id: unique in the tree, used by later patches to target this row.
+- insert:
+    - id: waypoint
+      name: '@waypoint/dsh-plugin'
